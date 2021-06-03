@@ -8,7 +8,6 @@ nav {
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-bottom: 20px;
 }
 
 nav div {
@@ -16,7 +15,11 @@ nav div {
     justify-content: center;
 }
 
-nav li {
+nav ul {
+    margin-top: 20px;
+}
+
+nav div ul li {
     font-size: large;
     margin-right: 30px;
     display: inline;
@@ -36,6 +39,11 @@ section {
     align-items: center;
 }
 
+section div {
+    display: flex;
+    justify-content: center;
+}
+
 section ul {
     display: flex;
     justify-content: center;
@@ -46,7 +54,7 @@ section ul li {
 }
 
 .icons {
-    width: 4%;
+    width: 3%;
 }
 
 .logo {

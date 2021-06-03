@@ -16,6 +16,11 @@ nav div {
     justify-content: center;
 }
 
+
+/* nav ul {
+    margin-top: 20px;
+} */
+
 nav li {
     font-size: large;
     margin-right: 30px;
