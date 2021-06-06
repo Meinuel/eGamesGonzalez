@@ -2,8 +2,12 @@ body {
     background-color: black;
     color: aliceblue;
     display: flex;
+    flex-direction: column;
+}
+
+.mainSignUp {
+    display: flex;
     justify-content: space-evenly;
-    margin-top: 10%;
 }
 
 fieldset {
