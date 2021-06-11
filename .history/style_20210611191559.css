@@ -5,6 +5,7 @@ body {
     font-size: 18px;
     margin-left: 30vh;
     margin-right: 30vh;
+    min-width: 30vh;
 }
 
 .bodySignUp {
@@ -34,7 +35,6 @@ a {
 }
 
 .bottomHeader {
-    min-width: 140vh;
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
@@ -115,7 +115,7 @@ td {
 }
 
 .contenedor {
-    min-width: 140vh;
+    /* width: 140vh; */
     height: 45vh;
     margin-bottom: 30px;
 }
