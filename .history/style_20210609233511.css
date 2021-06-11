@@ -1,0 +1,141 @@
+body {
+    color: aliceblue;
+    background-color: #640584;
+    font-family: 'Baloo Tammudu 2';
+    font-size: 16px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+header input {
+    height: 50px;
+    margin-bottom: 0.5em;
+}
+
+header img {
+    height: 200px;
+    border-radius: 5px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+
+nav li {
+    font-size: large;
+    margin-right: 40px;
+    display: inline;
+}
+
+li a {
+    color: aliceblue;
+}
+
+li {
+    display: block;
+}
+
+.boton {
+    height: 35px;
+    width: 100px;
+    background-color: #63BFA5;
+    color: aliceblue;
+}
+
+.marginHeader {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15em;
+    margin-right: 15em;
+    min-width: 50em;
+}
+
+.seccion__title {
+    display: flex;
+}
+
+footer p {
+    font-size: small;
+}
+
+iframe {
+    border-radius: 20px;
+    height: 200px;
+}
+
+input {
+    border-radius: 5px;
+}
+
+.icons {
+    width: 45px;
+    height: 45px;
+}
+
+.logo {
+    width: 5em;
+    height: 5em;
+}
+
+
+/* Descripciones Generos*/
+
+.generosBloque {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.generosDesc {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2%;
+    align-items: center;
+}
+
+.descripciones {
+    font-size: 1em;
+}
+
+.imagenes {
+    width: 25%;
+}
+
+
+/* Estilo pagina Sign Up */
+
+.mainSignUp {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+fieldset div {
+    display: flex;
+    justify-content: center;
+}
+
+.seccion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.seccion__card {
+    display: flex;
+    justify-content: center;
+}
