@@ -1,0 +1,150 @@
+body {
+    background-color: #d648a7;
+    color: white;
+}
+
+#grilla {
+    font-family: 'Baloo Tammudu 2';
+    display: grid;
+    grid-template-areas: "logo header" "nav main" "footer footer";
+    grid-template-rows: 10vh 77vh 0vh;
+    grid-template-columns: 40vh 128vh;
+    grid-column-gap: 10px;
+    grid-row-gap: 30px;
+}
+
+div#logo {
+    grid-area: logo;
+    margin: auto;
+}
+
+header {
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    grid-area: nav;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+main {
+    grid-area: main;
+    background-color: #b63e8e;
+}
+
+footer {
+    grid-area: footer;
+    background-color: red;
+}
+
+ul li {
+    list-style: none;
+    margin-bottom: 70px;
+}
+
+a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+input {
+    width: 100vh;
+    height: 5vh;
+}
+
+.borders {
+    border-style: solid;
+    border-color: black;
+    background-color: #63BFA5;
+}
+
+.radius {
+    border-radius: 5px;
+}
+
+.icons {
+    width: 5vh;
+    height: 5vh;
+    /* margin-left: 10px; */
+}
+
+.boton {
+    width: 15vh;
+    height: 30px;
+    color: white;
+    background: #63BFA5;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px black;
+}
+
+.logoIcon {
+    width: 18vh;
+    height: 13vh;
+    margin-bottom: 20px;
+}
+
+.contenedor__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor__card {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card {
+    width: 30vh;
+    height: 20vh;
+}
+
+img {
+    border-radius: 5px;
+}
+
+@media (min-width: 320px) and (max-width: 411px) {
+    * {
+        font-size: 20px;
+    }
+    #grilla {
+        grid-template-rows: 100px 920px 0px;
+        grid-template-columns: 110px 520px;
+        grid-column-gap: 0px;
+        grid-row-gap: 10px;
+    }
+    nav {
+        margin-left: 0px;
+    }
+    input {
+        width: 60vh;
+        height: 10vh;
+    }
+    .icons {
+        width: 9vh;
+        height: 9vh;
+    }
+    .logoIcon {
+        width: 20vh;
+        height: 15vh;
+    }
+    li {
+        margin-bottom: 100px;
+    }
+    .contenedor__card {
+        flex-wrap: wrap;
+    }
+    .card {
+        width: 37vh;
+        height: 22vh;
+        margin-bottom: 10px;
+    }
+}

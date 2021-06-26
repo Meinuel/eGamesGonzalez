@@ -1,0 +1,149 @@
+body {
+    background-color: #d648a7;
+    color: white;
+}
+
+#grilla {
+    font-family: 'Baloo Tammudu 2';
+    display: grid;
+    grid-template-areas: "nav header" "nav main" "nav footer";
+    grid-template-rows: 10vh 75vh 10vh;
+    grid-template-columns: 40vh 128vh;
+    grid-column-gap: 65px;
+    grid-row-gap: 10px;
+}
+
+header {
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    grid-area: nav;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 5vh;
+}
+
+main {
+    grid-area: main;
+    background-color: #b63e8e;
+}
+
+footer {
+    grid-area: footer;
+}
+
+li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+
+ul {
+    margin-right: 50px;
+}
+
+a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+input {
+    width: 100vh;
+    height: 5vh;
+}
+
+.borders {
+    border-style: solid;
+    border-color: black;
+    background-color: #63BFA5;
+}
+
+.radius {
+    border-radius: 5px;
+}
+
+.icons {
+    width: 5vh;
+    height: 5vh;
+    margin-left: 10px;
+}
+
+.boton {
+    width: 15vh;
+    height: 30px;
+    color: white;
+    background: #63BFA5;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px black;
+}
+
+.logoIcon {
+    width: 11vh;
+    height: 11vh;
+}
+
+.logotipo {
+    display: flex;
+    margin-bottom: 20px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+.contenedor__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor__card {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card {
+    width: 30vh;
+    height: 20vh;
+}
+
+img {
+    border-radius: 5px;
+}
+
+@media (min-width: 320px) and (max-width: 411px) {
+    * {
+        font-size: 30px;
+    }
+    #grilla {
+        grid-template-rows: 20vh 200vh 10vh;
+        grid-template-columns: 40vh 120vh;
+        grid-column-gap: 40px;
+        grid-row-gap: 10px;
+    }
+    input {
+        /* width: 115vh; */
+        height: 15vh;
+    }
+    .icons {
+        width: 10vh;
+        height: 10vh;
+        margin-left: 10px;
+    }
+    .logoIcon {
+        width: 15vh;
+        height: 15vh;
+    }
+    li {
+        overflow: hidden;
+        margin-bottom: 120px;
+    }
+}

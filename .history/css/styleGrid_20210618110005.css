@@ -1,0 +1,36 @@
+#grilla {
+    margin-left: 10%;
+    display: grid;
+    grid-template-areas: "header header" "formulario gif" "footer footer";
+    grid-template-rows: 20% 50% 20%;
+    grid-template-columns: 45% 45%;
+    grid-column-gap: 15%;
+    grid-row-gap: 15px;
+}
+
+header {
+    grid-area: header;
+}
+
+footer {
+    grid-area: footer;
+}
+
+section#formulario {
+    grid-area: formulario;
+}
+
+aside#gif {
+    grid-area: gif;
+}
+
+body {
+    background-color: #640584;
+    color: aliceblue;
+}
+
+fieldset {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,29 @@
+#grilla {
+    font-family: 'Baloo Tammudu 2';
+    /* margin-left: 5%; */
+    display: grid;
+    grid-template-areas: "nav header" "nav main" "nav footer";
+    grid-template-rows: 20% auto 10%;
+    grid-template-columns: 25% 65%;
+    grid-column-gap: 5%;
+    grid-row-gap: 10px;
+}
+
+header {
+    background-color: aqua;
+    grid-area: header;
+    display: flex;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.logoIcon {
+    width: 11vh;
+    height: 11vh;
+}
+
+.logotipo {
+    display: flex;
+}

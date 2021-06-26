@@ -1,0 +1,133 @@
+body {
+    background-color: #8c18b3;
+    color: aliceblue;
+}
+
+#grilla {
+    font-family: 'Baloo Tammudu 2';
+    display: grid;
+    grid-template-areas: "nav header" "nav publicidad" "nav main" "nav footer";
+    grid-template-rows: 10vh 22vh;
+    grid-template-columns: 40vh 150vh;
+    grid-column-gap: 0.5vh;
+    grid-row-gap: 10px;
+}
+
+header {
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #7d0ea2;
+    border-style: solid;
+    border-color: #63BFA5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 5vh;
+    /* margin-top: 2vh; */
+}
+
+main {
+    background-color: antiquewhite;
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 65px;
+}
+
+ul {
+    margin-right: 50px;
+}
+
+a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: aliceblue;
+    text-shadow: 1px 1px 2px black;
+    text-decoration: none;
+}
+
+input {
+    min-width: 100vh;
+    min-height: 5vh;
+}
+
+section#publicidad {
+    grid-area: "publicidad";
+}
+
+section#publicidad img {
+    margin-left: 85px;
+    width: 128vh;
+    height: 22vh;
+}
+
+.borders {
+    border-radius: 5px;
+}
+
+.icons {
+    width: 5vh;
+    height: 5vh;
+    margin-left: 10px;
+}
+
+.boton {
+    min-width: 15vh;
+    height: 30px;
+    color: aliceblue;
+    background: #63BFA5;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px black;
+}
+
+.logoIcon {
+    width: 11vh;
+    height: 11vh;
+}
+
+.logotipo {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.contenedor {
+    min-width: 140vh;
+    height: 45vh;
+    margin-bottom: 30px;
+}
+
+.contenedor__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor__card {
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(216, 228, 238);
+    padding: 1vh;
+}
+
+.card {
+    width: 30vh;
+    height: 20vh;
+    border-radius: 5px;
+}

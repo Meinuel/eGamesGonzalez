@@ -1,0 +1,76 @@
+body {
+    background-color: #640584;
+    color: aliceblue;
+}
+
+#grilla {
+    font-family: 'Baloo Tammudu 2';
+    display: grid;
+    grid-template-areas: "nav header" "nav publicidad" "nav main" "nav footer";
+    grid-template-rows: 12vh auto 10%;
+    grid-template-columns: 30vh 150vh;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+header {
+    background-color: aqua;
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+footer {
+    grid-area: footer;
+}
+
+nav {
+    background-color: red;
+    grid-area: nav;
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: aliceblue;
+    text-shadow: 1px 1px 2px black;
+}
+
+.inputGif {
+    min-width: 100vh;
+    min-height: 5vh;
+    border-radius: 5px;
+}
+
+.boton {
+    min-width: 70px;
+    height: 30px;
+    color: aliceblue;
+    background: #63BFA5;
+    border-radius: 5px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    text-shadow: 1px 1px 2px black;
+}
+
+section#publicidad {
+    grid-area: "publicidad";
+    margin-left: 15px;
+}
+
+.logoIcon {
+    width: 11vh;
+    height: 11vh;
+}
+
+.logotipo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
