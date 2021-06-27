@@ -17,11 +17,11 @@ body {
 div#logo {
     grid-area: logo;
     margin: auto;
-    transform: rotate(15deg);
 }
 
 .logoTransition {
     transition-duration: 2s;
+    transform: rotate(15deg);
 }
 
 div#logo:hover {
