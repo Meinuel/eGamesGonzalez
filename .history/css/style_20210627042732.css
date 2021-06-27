@@ -17,12 +17,10 @@ body {
 div#logo {
     grid-area: logo;
     margin: auto;
-    transition-duration: 2s;
     transform: rotate(15deg);
 }
 
 div#logo:hover {
-    transition-duration: 2s;
     transform: rotate(0deg);
 }
 

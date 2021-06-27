@@ -1,11 +1,11 @@
 body {
     background-color: #d648a7;
     background-image: linear-gradient(to bottom, #d648a7, #ff8fda);
-    font-family: 'Baloo Tammudu 2';
     color: white;
 }
 
 #grilla {
+    font-family: 'Baloo Tammudu 2';
     display: grid;
     grid-template-areas: "logo header" "nav main" "footer footer";
     grid-template-rows: 10vh 80vh 0vh;
@@ -17,13 +17,7 @@ body {
 div#logo {
     grid-area: logo;
     margin: auto;
-    transition-duration: 2s;
     transform: rotate(15deg);
-}
-
-div#logo:hover {
-    transition-duration: 2s;
-    transform: rotate(0deg);
 }
 
 header {

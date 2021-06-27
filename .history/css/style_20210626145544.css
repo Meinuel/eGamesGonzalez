@@ -1,11 +1,17 @@
+@font-face {
+    src: url(../assets/fonts/BUNGEE-REGULAR.TTF);
+    font-family: bungee;
+    font-size: 5px;
+}
+
 body {
     background-color: #d648a7;
     background-image: linear-gradient(to bottom, #d648a7, #ff8fda);
-    font-family: 'Baloo Tammudu 2';
     color: white;
 }
 
 #grilla {
+    font-family: bungee;
     display: grid;
     grid-template-areas: "logo header" "nav main" "footer footer";
     grid-template-rows: 10vh 80vh 0vh;
@@ -17,13 +23,7 @@ body {
 div#logo {
     grid-area: logo;
     margin: auto;
-    transition-duration: 2s;
     transform: rotate(15deg);
-}
-
-div#logo:hover {
-    transition-duration: 2s;
-    transform: rotate(0deg);
 }
 
 header {
@@ -34,19 +34,19 @@ header {
 
 nav {
     grid-area: nav;
-    margin-right: 7vh;
-    margin-left: 7vh;
+    margin-right: 60px;
+    margin-left: 60px;
     display: flex;
 }
 
 .contenedorNav__pages {
-    margin-top: 15vh;
+    margin-top: 100px;
 }
 
 .contenedorNav__cables {
-    margin-top: 17.5vh;
-    width: 14vh;
-    height: 63vh;
+    margin-top: 107px;
+    width: 95px;
+    height: 500px;
 }
 
 .mainPages {
@@ -94,12 +94,6 @@ a:hover {
     border-radius: 5px;
 }
 
-.logoIcon {
-    width: 30vh;
-    height: 25vh;
-    margin-bottom: 20px;
-}
-
 .icons {
     width: 10vh;
     height: 10vh;
@@ -117,6 +111,12 @@ a:hover {
     /* background: #63BFA5; */
     text-decoration: none;
     text-shadow: 1px 1px 2px black;
+}
+
+.logoIcon {
+    width: 30vh;
+    height: 25vh;
+    margin-bottom: 20px;
 }
 
 .contenedor__title {
@@ -152,26 +152,14 @@ a:hover {
     animation-duration: 2s;
 }
 
-.playerCard__img {
-    width: 27vh;
-    height: 17vh;
-}
-
-.playerCard__datos {
-    color: black;
-    font-size: 2vh;
-}
-
 .generosCard {
     background-color: rgb(235, 233, 233);
     color: black;
 }
 
 .carrouselLive {
-    display: block;
-    margin: auto;
-    width: 60vh;
-    height: 40vh;
+    display: flex;
+    justify-content: center;
     animation-name: fadeIn;
     animation-duration: 2s;
 }
@@ -183,6 +171,26 @@ a:hover {
     100% {
         opacity: 1;
     }
+}
+
+.playerCard__img {
+    width: 27vh;
+    height: 17vh;
+}
+
+.playerCard__datos {
+    color: black;
+    height: 25vh;
+}
+
+.playerCard__datos--lista {
+    display: block;
+}
+
+.seccionesAlign {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 img {

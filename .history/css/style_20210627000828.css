@@ -1,11 +1,11 @@
 body {
     background-color: #d648a7;
     background-image: linear-gradient(to bottom, #d648a7, #ff8fda);
-    font-family: 'Baloo Tammudu 2';
     color: white;
 }
 
 #grilla {
+    font-family: 'Baloo Tammudu 2';
     display: grid;
     grid-template-areas: "logo header" "nav main" "footer footer";
     grid-template-rows: 10vh 80vh 0vh;
@@ -17,13 +17,10 @@ body {
 div#logo {
     grid-area: logo;
     margin: auto;
-    transition-duration: 2s;
-    transform: rotate(15deg);
 }
 
 div#logo:hover {
-    transition-duration: 2s;
-    transform: rotate(0deg);
+    transform: rotate(15deg);
 }
 
 header {
@@ -34,19 +31,20 @@ header {
 
 nav {
     grid-area: nav;
-    margin-right: 7vh;
-    margin-left: 7vh;
+    margin-right: 60px;
+    margin-left: 60px;
     display: flex;
 }
 
 .contenedorNav__pages {
-    margin-top: 15vh;
+    margin-top: 100px;
 }
 
 .contenedorNav__cables {
-    margin-top: 17.5vh;
-    width: 14vh;
-    height: 63vh;
+    background-color: aqua;
+    margin-top: 107px;
+    width: 95px;
+    height: 500px;
 }
 
 .mainPages {
@@ -159,7 +157,7 @@ a:hover {
 
 .playerCard__datos {
     color: black;
-    font-size: 2vh;
+    height: 25vh;
 }
 
 .generosCard {
@@ -168,10 +166,8 @@ a:hover {
 }
 
 .carrouselLive {
-    display: block;
-    margin: auto;
-    width: 60vh;
-    height: 40vh;
+    display: flex;
+    justify-content: center;
     animation-name: fadeIn;
     animation-duration: 2s;
 }
