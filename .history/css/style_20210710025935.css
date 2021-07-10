@@ -280,17 +280,18 @@ fieldset div {
     }
     .playerCard {
         width: 100px;
-        height: 240px;
-    }
-    .playerCard__img {
-        width: 100px;
-        height: 70px;
+        height: 200px;
     }
     li {
         font-size: 10px;
     }
+    .playerCard__img {
+        width: 100px;
+        height: 40px;
+    }
     .playerCard__datos {
         color: black;
+        font-size: 2vh;
     }
     p {
         font-size: 10px;

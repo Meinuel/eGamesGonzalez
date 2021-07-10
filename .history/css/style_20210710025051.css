@@ -178,6 +178,7 @@ header a:hover {
 }
 
 .carrouselLive {
+    background-color: aqua;
     display: block;
     margin: auto;
     width: 80vh;
@@ -266,31 +267,9 @@ fieldset div {
         height: 70px;
         margin-bottom: 10px;
     }
-    .carrouselLive {
-        display: block;
-        margin: auto;
-        width: 230px;
-        height: 180px;
-        animation-name: fadeIn;
-        animation-duration: 2s;
-    }
     .carrousel__img {
-        width: 230px;
-        height: 180px;
-    }
-    .playerCard {
-        width: 100px;
-        height: 240px;
-    }
-    .playerCard__img {
-        width: 100px;
-        height: 70px;
-    }
-    li {
-        font-size: 10px;
-    }
-    .playerCard__datos {
-        color: black;
+        width: 80px;
+        height: 60px;
     }
     p {
         font-size: 10px;
