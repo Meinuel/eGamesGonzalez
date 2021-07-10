@@ -216,7 +216,7 @@ fieldset div {
     justify-content: center;
 }
 
-@media (min-width: 320px) and (max-width: 415px) and (max-width: 700px) {
+@media (min-width: 320px) and (max-width: 415px) {
     * {
         font-size: 16px;
     }
@@ -236,10 +236,8 @@ fieldset div {
         height: 63vh;
     }
     nav a {
-        width: 35px;
-        font-size: 12px;
         margin-left: 0px;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
     }
     .inputHeader {
         margin-right: 10px;

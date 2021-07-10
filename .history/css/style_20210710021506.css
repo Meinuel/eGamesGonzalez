@@ -78,9 +78,6 @@ a {
     align-items: center;
     color: white;
     text-decoration: none;
-}
-
-nav a {
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -125,6 +122,7 @@ header a:hover {
     width: 15vh;
     height: 30px;
     color: white;
+    /* background: #63BFA5; */
     text-decoration: none;
     text-shadow: 1px 1px 2px black;
 }
@@ -216,48 +214,33 @@ fieldset div {
     justify-content: center;
 }
 
-@media (min-width: 320px) and (max-width: 415px) and (max-width: 700px) {
+@media (min-width: 320px) and (max-width: 415px) {
     * {
-        font-size: 16px;
+        font-size: 20px;
     }
     #grilla {
-        grid-template-rows: 70px 550px 0px;
-        grid-template-columns: 110px 250px;
+        grid-template-rows: 100px 550px 50px;
+        grid-template-columns: 100px 250px;
         grid-column-gap: 0px;
-        grid-row-gap: 0px;
+        grid-row-gap: 5px;
     }
     nav {
-        margin-right: 5px;
         margin-left: 0px;
     }
-    .contenedorNav__cables {
-        margin-top: 130px;
-        width: 9vh;
-        height: 63vh;
-    }
-    nav a {
-        width: 35px;
-        font-size: 12px;
-        margin-left: 0px;
-        margin-bottom: 15px;
-    }
-    .inputHeader {
-        margin-right: 10px;
-        width: 150px;
-        height: 30px;
-    }
-    .boton {
-        width: 80px;
-        height: 30px;
+    input {
+        width: 60vh;
+        height: 10vh;
     }
     .icons {
         width: 9vh;
         height: 9vh;
     }
     .logoIcon {
-        width: 18vh;
-        height: 13vh;
-        margin-top: 25px;
+        width: 20vh;
+        height: 15vh;
+    }
+    li {
+        margin-bottom: 100px;
     }
     .contenedor__card {
         flex-wrap: wrap;
@@ -266,8 +249,5 @@ fieldset div {
         width: 90px;
         height: 70px;
         margin-bottom: 10px;
-    }
-    p {
-        font-size: 10px;
     }
 }
