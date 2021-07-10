@@ -185,16 +185,15 @@ header a:hover {
     animation-duration: 2s;
 }
 
-
-/* .carrouselCenter {
+.carrouselCenter {
     display: flex;
     justify-content: center;
     align-items: center;
-} */
+}
 
 .carrousel__img {
     width: 80vh;
-    height: 60vh;
+    height: 40vh;
 }
 
 @keyframes fadeIn {

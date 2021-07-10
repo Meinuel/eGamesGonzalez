@@ -177,7 +177,9 @@ header a:hover {
 
 .carrouselLive {
     background-color: aqua;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: auto;
     width: 80vh;
     height: 60vh;
@@ -193,8 +195,8 @@ header a:hover {
 } */
 
 .carrousel__img {
-    width: 80vh;
-    height: 60vh;
+    width: 60vh;
+    height: 40vh;
 }
 
 @keyframes fadeIn {
