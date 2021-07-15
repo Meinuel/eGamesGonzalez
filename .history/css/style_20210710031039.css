@@ -33,7 +33,6 @@ header {
     grid-area: header;
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
 nav {
@@ -41,18 +40,6 @@ nav {
     margin-right: 7vh;
     margin-left: 7vh;
     display: flex;
-}
-
-.mainSection {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-.mainSection-verTodo {
-    align-self: flex-end;
-    margin-right: 30px;
-    margin-top: 10px;
 }
 
 .contenedorNav__pages {
@@ -274,7 +261,7 @@ fieldset div {
     .contenedor__card {
         flex-wrap: wrap;
     }
-    .mainCard {
+    .card {
         width: 90px;
         height: 70px;
         margin-bottom: 10px;

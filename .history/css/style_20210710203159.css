@@ -33,7 +33,6 @@ header {
     grid-area: header;
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
 nav {
@@ -46,13 +45,7 @@ nav {
 .mainSection {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-}
-
-.mainSection-verTodo {
-    align-self: flex-end;
-    margin-right: 30px;
-    margin-top: 10px;
+    align-items: center;
 }
 
 .contenedorNav__pages {
