@@ -1,0 +1,19 @@
+.carrouselLive {
+    background-color: gold;
+    width: 70vh;
+    height: 50vh;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+}
+
+.carrouselFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrousel__img {
+    width: 60vh;
+    height: 40vh;
+}

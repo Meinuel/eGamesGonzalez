@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>eGames</title>
+</head>
+
+<body id="grilla">
+    <div class="logoTransition" id="logo">
+        <img src="../assets/icons/logo.png" alt="Logo eGames" class="logoIcon">
+    </div>
+    <header class="myHeader">
+        <div>
+            <input type="text" class="myHeader__input myRadius" name="searchInput" id="searchInput" placeholder="Busca tu video">
+        </div>
+        <div>
+            <a href="eGamesSignUp.html" class="myButton bordersAndRadius">login</a>
+        </div>
+    </header>
+    <nav class="containerNav bordersAndRadius">
+        <div>
+            <img class="containerNav__cables" src="../assets/icons/cables_.png" alt="">
+        </div>
+        <div class="containerNav__pages">
+            <ul>
+                <li>
+                    <a href="../index.html"><img class="iconsNav" src="../assets/icons/principal.png" alt="main">Principal</a>
+                </li>
+                <li>
+                    <a href="eGamesLive.html"><img class="iconsNav iconsNav--live" src="../assets/icons/live.png" alt="main">Live</a>
+                </li>
+                <li>
+                    <a href="eGamesTopPlayers.html"><img class="iconsNav" src="../assets/icons/top.png" alt="main">Top </a>
+                </li>
+                <li>
+                    <div class="dropright">
+                        <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="iconsNav" src="../assets/icons/generos.png" alt="main">Géneros</a>
+                        <div class="dropdown-menu" x-placement="right-start" style="position: absolute; transform: translate3d(111px, 0px, 0px); top: 0px; left: 0px; will-change: transform;">
+                            <a class="dropdown-item" href="../secciones/eGamesGeneros.html">MOBA</a>
+                            <a class="dropdown-item" href="../secciones/eGamesGeneros.html">FPS</a>
+                            <a class="dropdown-item" href="../secciones/eGamesGeneros.html">SPORTS</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main class="containerMain containerMain--live myRadius">
+
+        <div class="containerSection__title">
+            <img src="../assets/icons/live.png" alt="live img" class="iconsTitle iconsTitle--live">
+            <h2>Live</h2>
+        </div>
+
+        <div id="demo" class="carousel slide carrouselLive" data-ride="carousel">
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="carrousel__img" src="../assets/images/fps.jpg" alt="Los Angeles">
+                </div>
+                <div class="carousel-item">
+                    <img class="carrousel__img" src="../assets/images/lucha.jpg" alt="Chicago">
+                </div>
+                <div class="carousel-item">
+                    <img class="carrousel__img" src="../assets/images/MOBA.jpg" alt="New York">
+                </div>
+            </div>
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </main>
+    <footer>
+        <p>Developed by Manuel Agustín Gonzalez Gonzalez Todos los derechos reservadoirtz</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+fieldset {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset div {
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,34 @@
+$radius:5px;
+$colors : black,
+#63BFA5;
+%borders {
+    border-style: solid;
+    border-color: nth($colors, 1);
+    background-color: nth($colors, 2);
+}
+
+%radius {
+    border-radius: $radius;
+}
+
+%myLinks {
+    color: white;
+    text-decoration: none;
+}
+
+a {
+    @extend %myLinks;
+}
+
+.myBorders {
+    @extend %borders;
+}
+
+.myRadius {
+    @extend %radius;
+}
+
+.bordersAndRadius {
+    @extend %radius;
+    @extend %borders;
+}

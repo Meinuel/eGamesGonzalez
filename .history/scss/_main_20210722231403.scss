@@ -1,0 +1,10 @@
+.mainSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    a {
+        align-self: flex-end;
+        margin-right: 30px;
+        margin-top: 10px;
+    }
+}

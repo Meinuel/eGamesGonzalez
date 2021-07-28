@@ -1,0 +1,19 @@
+@import 'grid';
+@import 'navigation';
+@import 'header';
+@import 'main';
+@import 'footer';
+@import 'extends';
+@import 'assetsSizes';
+@import 'logo';
+@import 'mainGeneros';
+@import 'mainLive';
+@import 'mainPrincipal';
+@import 'mainTop';
+body {
+    background-color: #d648a7;
+    background-image: linear-gradient(to bottom, #d648a7, #ff8fda);
+    font-family: 'Baloo Tammudu 2' !important;
+    font-size: 13px;
+    color: white;
+}

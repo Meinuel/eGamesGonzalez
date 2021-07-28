@@ -1,0 +1,39 @@
+.containerMain {
+    grid-area: main;
+    background-color: #b63e8e;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-evenly;
+}
+
+.containerSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    a {
+        align-self: flex-end;
+        margin-right: 30px;
+        margin-top: 10px;
+    }
+    &__title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__cards {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+
+.mainCard {
+    width: 30vh;
+    height: 20vh;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    &:hover {
+        width: 32vh;
+        height: 22vh;
+    }
+}

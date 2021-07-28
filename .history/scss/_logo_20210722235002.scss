@@ -1,0 +1,15 @@
+div#logo {
+    grid-area: logo;
+    margin: auto;
+    transform: rotate(15deg);
+    z-index: -1;
+    position: relative;
+    &:hover {
+        transition-duration: 2s;
+        transform: rotate(0deg);
+    }
+}
+
+.logoTransition {
+    transition-duration: 2s;
+}

@@ -1,0 +1,35 @@
+@import 'extends';
+.containerNav {
+    grid-area: nav;
+    margin-right: 7vh;
+    margin-left: 7vh;
+    display: flex;
+    &__pages {
+        margin-top: 17vh;
+        li {
+            background-color: tomato;
+            list-style: none;
+            width: 5vh;
+            height: 5vh;
+            margin-bottom: 7vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            &:hover {
+                background-color: #25856a;
+                border-radius: 10px;
+                text-decoration: none;
+            }
+        }
+    }
+    &__cables {
+        margin-top: 17.5vh;
+        width: 14vh;
+        height: 63vh;
+    }
+}
+
+.iconsNav {
+    width: 5vh;
+    height: 5vh;
+}

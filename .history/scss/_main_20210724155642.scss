@@ -1,0 +1,43 @@
+$size:10vh;
+.containerMain {
+    grid-area: main;
+    background-color: #b63e8e;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.containerSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    letter-spacing: 2px;
+    a {
+        align-self: flex-end;
+        margin-right: 30px;
+        margin-top: 10px;
+    }
+    &__title {
+        width: $size *4;
+        background-color: tomato;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font-family: 'Bebas Neue';
+    }
+    &__cards {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+
+.iconsTitle {
+    width: $size;
+    height: $size;
+}
+
+.iconsTitle--live {
+    width: $size *1.2;
+}

@@ -1,0 +1,402 @@
+body {
+    background-color: #d648a7;
+    background-image: linear-gradient(to bottom, #d648a7, #ff8fda);
+    font-family: 'Baloo Tammudu 2';
+    color: white;
+}
+
+#grilla {
+    display: grid;
+    grid-template-areas: "logo header" "nav main" "footer footer";
+    grid-template-rows: 10vh 80vh 0vh;
+    grid-template-columns: 45vh 128vh;
+    grid-column-gap: 10px;
+    grid-row-gap: 30px;
+}
+
+div#logo {
+    grid-area: logo;
+    margin: auto;
+    transform: rotate(15deg);
+}
+
+.logoTransition {
+    transition-duration: 2s;
+}
+
+div#logo:hover {
+    transition-duration: 2s;
+    transform: rotate(0deg);
+}
+
+header {
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    grid-area: nav;
+    margin-right: 7vh;
+    margin-left: 7vh;
+    display: flex;
+}
+
+.mainSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.mainSection>a {
+    align-self: flex-end;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+
+.contenedorNav__pages {
+    margin-top: 15vh;
+}
+
+.contenedorNav__cables {
+    margin-top: 17.5vh;
+    width: 14vh;
+    height: 63vh;
+}
+
+.mainPages {
+    grid-area: main;
+    background-color: #b63e8e;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.mainSignUp {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.inputHeader {
+    width: 100vh;
+    height: 5vh;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+header a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav a {
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav a:hover {
+    background-color: #25856a;
+    border-radius: 10px;
+}
+
+header a:hover {
+    background-color: #25856a;
+    border-radius: 10px;
+}
+
+.borders {
+    border-style: solid;
+    border-color: black;
+    background-color: #63BFA5;
+}
+
+.radius {
+    border-radius: 5px;
+}
+
+.logoIcon {
+    width: 30vh;
+    height: 25vh;
+    margin-bottom: 20px;
+}
+
+.icons {
+    width: 10vh;
+    height: 10vh;
+}
+
+.iconsMain {
+    width: 7vh;
+    height: 7vh;
+}
+
+.boton {
+    width: 15vh;
+    height: 30px;
+    color: white;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px black;
+}
+
+.contenedor__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor__card {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.mainCard {
+    width: 30vh;
+    height: 20vh;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+}
+
+.mainCard:hover {
+    width: 32vh;
+    height: 22vh;
+}
+
+.playerCard {
+    width: 27vh;
+    height: 42vh;
+    background-color: aliceblue;
+    border-radius: 5px;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+}
+
+.playerCard__img {
+    width: 27vh;
+    height: 17vh;
+}
+
+.playerCard__datos {
+    color: black;
+    font-size: 2vh;
+}
+
+.generosCard {
+    background-color: rgb(235, 233, 233);
+    color: black;
+}
+
+.carrouselLive {
+    display: block;
+    margin: auto;
+    width: 80vh;
+    height: 60vh;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+}
+
+.carrousel__img {
+    width: 80vh;
+    height: 60vh;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+img {
+    border-radius: 5px;
+}
+
+fieldset {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset div {
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 310px) and (max-width: 400px) {
+    * {
+        font-size: 14px;
+    }
+    #grilla {
+        grid-template-rows: 10vh 80vh 0vh;
+        grid-template-columns: 110px 250px;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+    nav {
+        margin-right: 5px;
+        margin-left: 0px;
+    }
+    .contenedorNav__cables {
+        margin-top: 130px;
+        width: 9vh;
+        height: 63vh;
+    }
+    nav a {
+        width: 35px;
+        font-size: 12px;
+        margin-left: 0px;
+        margin-bottom: 15px;
+    }
+    .inputHeader {
+        margin-right: 10px;
+        width: 150px;
+        height: 30px;
+    }
+    .boton {
+        width: 80px;
+        height: 30px;
+    }
+    .icons {
+        width: 9vh;
+        height: 9vh;
+    }
+    .logoIcon {
+        width: 18vh;
+        height: 13vh;
+        margin-top: 25px;
+    }
+    .contenedor__card {
+        flex-wrap: wrap;
+    }
+    .mainCard {
+        width: 90px;
+        height: 70px;
+        margin-bottom: 10px;
+    }
+    .carrouselLive {
+        display: block;
+        margin: auto;
+        width: 230px;
+        height: 180px;
+        animation-name: fadeIn;
+        animation-duration: 2s;
+    }
+    .carrousel__img {
+        width: 230px;
+        height: 180px;
+    }
+    .playerCard {
+        width: 100px;
+        height: 240px;
+    }
+    .playerCard__img {
+        width: 100px;
+        height: 70px;
+    }
+    li {
+        font-size: 10px;
+    }
+    .playerCard__datos {
+        color: black;
+    }
+    p {
+        font-size: 10px;
+    }
+}
+
+@media (min-width:401px) and (max-width:800px) {
+    * {
+        font-size: 16px;
+    }
+    #grilla {
+        grid-template-rows: 70px 550px 0px;
+        grid-template-columns: 110px 250px;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+    nav {
+        margin-right: 5px;
+        margin-left: 0px;
+    }
+    .contenedorNav__cables {
+        margin-top: 130px;
+        width: 9vh;
+        height: 63vh;
+    }
+    nav a {
+        width: 35px;
+        font-size: 12px;
+        margin-left: 0px;
+        margin-bottom: 15px;
+    }
+    .inputHeader {
+        margin-right: 10px;
+        width: 150px;
+        height: 30px;
+    }
+    .boton {
+        width: 80px;
+        height: 30px;
+    }
+    .icons {
+        width: 9vh;
+        height: 9vh;
+    }
+    .logoIcon {
+        width: 18vh;
+        height: 13vh;
+        margin-top: 25px;
+    }
+    .contenedor__card {
+        flex-wrap: wrap;
+    }
+    .mainCard {
+        width: 90px;
+        height: 70px;
+        margin-bottom: 10px;
+    }
+    .carrouselLive {
+        display: block;
+        margin: auto;
+        width: 230px;
+        height: 180px;
+        animation-name: fadeIn;
+        animation-duration: 2s;
+    }
+    .carrousel__img {
+        width: 230px;
+        height: 180px;
+    }
+    .playerCard {
+        width: 100px;
+        height: 240px;
+    }
+    .playerCard__img {
+        width: 100px;
+        height: 70px;
+    }
+    li {
+        font-size: 10px;
+    }
+    .playerCard__datos {
+        color: black;
+    }
+    p {
+        font-size: 10px;
+    }
+}

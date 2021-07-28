@@ -1,0 +1,19 @@
+div#logo {
+    grid-area: logo;
+    margin: auto;
+    transform: rotate(15deg);
+    &:hover {
+        transition-duration: 2s;
+        transform: rotate(0deg);
+    }
+}
+
+.logoTransition {
+    transition-duration: 2s;
+}
+
+.logoIcon {
+    width: 30vh;
+    height: 25vh;
+    margin-top: 10px;
+}

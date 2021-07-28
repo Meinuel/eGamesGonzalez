@@ -1,0 +1,25 @@
+{
+    "name": "egamesgonzalez",
+    "version": "1.0.0",
+    "description": "eGames|Compartí jugando",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build-css": "sass --watch scss/style.scss css/style.css",
+        "watch-css": "nodemon -e scss -x \"npm run build-css"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Meinuel/eGamesGonzalez.git"
+    },
+    "author": "Manuel Agustin Gonzalez Saez",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Meinuel/eGamesGonzalez/issues"
+    },
+    "homepage": "https://github.com/Meinuel/eGamesGonzalez#readme",
+    "devDependencies": {
+        "node-sass": "^6.0.1",
+        "nodemon": "^2.0.12"
+    }
+}

@@ -1,0 +1,29 @@
+@import 'extends';
+.contenedorNav {
+    grid-area: nav;
+    margin-right: 7vh;
+    margin-left: 7vh;
+    display: flex;
+    @extend .myBorders;
+    a {
+        margin-left: 20px;
+        margin-right: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &:hover {
+            background-color: #25856a;
+            border-radius: 10px;
+        }
+    }
+}
+
+.contenedorNav__pages {
+    margin-top: 15vh;
+}
+
+.contenedorNav__cables {
+    margin-top: 17.5vh;
+    width: 14vh;
+    height: 63vh;
+}

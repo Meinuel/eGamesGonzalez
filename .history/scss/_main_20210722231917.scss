@@ -1,0 +1,28 @@
+.mainSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    a {
+        align-self: flex-end;
+        margin-right: 30px;
+        margin-top: 10px;
+    }
+}
+
+.contenedor__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainCard {
+    width: 30vh;
+    height: 20vh;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+}
+
+.mainCard:hover {
+    width: 32vh;
+    height: 22vh;
+}

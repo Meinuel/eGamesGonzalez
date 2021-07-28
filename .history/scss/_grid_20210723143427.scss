@@ -1,0 +1,8 @@
+#grilla {
+    display: grid;
+    grid-template-areas: "logo header" "nav main" "footer footer";
+    grid-template-rows: 11vh 80vh 0vh;
+    grid-template-columns: 45vh 128vh;
+    grid-column-gap: 10px;
+    grid-row-gap: 30px;
+}

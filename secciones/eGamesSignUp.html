@@ -5,8 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <title>Registrate</title>
 </head>
@@ -16,7 +14,7 @@
         <form action="login_page.php" id="formEmail" method="POST" enctype="multipart/form-data">
             <fieldset>
                 <legend>
-                    <img class="logoIcon" src="../assets/icons/logo.png" alt="">
+                    <a href="../index.html">.<img class="logoIcon" src="../assets/icons/logo.png" alt=""></a>
                 </legend>
                 <label for="email">Mail:</label>
                 <input type="email" id="email" name="email" class="radius"><br>
@@ -31,8 +29,8 @@
                         <option value="Otro">Otro</option>
                     </select><br>
                 <div>
-                    <input type="submit" id="signUpButton" name="signUpButton" value="Sign Up" class="boton radius borders">
-                    <input type="reset" id="resetButton" name="resetButton" value="Limpiar" class="boton radius borders">
+                    <input type="submit" id="signUpButton" name="signUpButton" value="SIGN UP" class="myButton bordersAndRadius">
+                    <input type="reset" id="resetButton" name="resetButton" value="RESET" class="myButton bordersAndRadius">
                 </div><br>
                 <div>
                     <label for="notificaciones">Deseo recibir notificaciones y noticias de este sitio</label>
@@ -41,7 +39,7 @@
             </fieldset>
         </form>
         <aside>
-            <img src="../assets/gif/signup.gif" alt="signup gif">
+            <img loading="lazy" src="../assets/gif/signup.gif" alt="signup gif">
         </aside>
     </main>
 </body>

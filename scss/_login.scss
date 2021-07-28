@@ -1,0 +1,16 @@
+.mainSignUp {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+fieldset {
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset div {
+    display: flex;
+    justify-content: space-evenly;
+}
