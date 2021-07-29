@@ -1,3 +1,22 @@
 footer {
     grid-area: footer;
+    margin-top: 10vh;
+    background-color: #d648a7;
+    border-top: solid black;
+    border-radius: 20px 20px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    div {
+        margin: 0 auto;
+    }
+}
+
+.iconsFooter {
+    width: 10vh;
+    height: 10vh;
 }

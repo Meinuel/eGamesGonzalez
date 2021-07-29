@@ -1,20 +1,22 @@
 $size:9vh;
+%flexColEvenly {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
 .containerMain {
     grid-area: main;
     background-color: #b63e8e;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-.containerMain--live {
-    align-items: center;
+    margin-right: 3vw;
+    @extend %flexColEvenly;
+    &--live {
+        align-items: center;
+    }
 }
 
 .containerSection {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    @extend %flexColEvenly;
     letter-spacing: 2px;
     a {
         align-self: flex-end;
@@ -26,6 +28,7 @@ $size:9vh;
         justify-content: center;
         align-items: center;
         font-family: 'Bebas Neue';
+        margin-bottom: 2.5vh;
     }
     &__cards {
         display: flex;
@@ -42,4 +45,9 @@ $size:9vh;
 
 .iconsTitle--live {
     width: $size *1.2;
+}
+
+.descripcion {
+    margin: 0 auto;
+    font-size: 25px;
 }

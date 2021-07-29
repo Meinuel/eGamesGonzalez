@@ -2,16 +2,15 @@
 #grilla {
   display: grid;
   grid-template-areas: "logo header" "nav main" "footer footer";
-  grid-template-rows: 11vh 82vh 0vh;
-  grid-template-columns: 45vh 128vh;
-  grid-column-gap: 10px;
-  grid-row-gap: 30px;
+  grid-template-rows: 11vh 82vh 20vh;
+  grid-template-columns: 20vw 78.9vw;
+  grid-row-gap: 4vh;
 }
 
 .containerNav {
   grid-area: nav;
-  margin-right: 7vh;
-  margin-left: 7vh;
+  margin-right: 2vw;
+  margin-left: 2.5vw;
   display: flex;
 }
 .containerNav__pages {
@@ -19,7 +18,6 @@
 }
 .containerNav__pages li {
   padding-top: 3px;
-  list-style: none;
   width: 9vh;
   height: 10vh;
   margin-bottom: 6vh;
@@ -59,6 +57,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-right: 3vw;
 }
 .myHeader a {
   display: flex;
@@ -68,28 +67,30 @@
 .myHeader a:hover {
   background-color: #25856a;
   border-radius: 10px;
+  text-decoration: none;
+  color: white;
 }
 .myHeader__input {
   width: 100vh;
   height: 5vh;
 }
 
-.containerMain {
-  grid-area: main;
-  background-color: #b63e8e;
+.containerSection, .containerMain {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
 
+.containerMain {
+  grid-area: main;
+  background-color: #b63e8e;
+  margin-right: 3vw;
+}
 .containerMain--live {
   align-items: center;
 }
 
 .containerSection {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
   letter-spacing: 2px;
 }
 .containerSection a {
@@ -102,6 +103,7 @@
   justify-content: center;
   align-items: center;
   font-family: "Bebas Neue";
+  margin-bottom: 2.5vh;
 }
 .containerSection__cards {
   display: flex;
@@ -119,8 +121,32 @@
   width: 10.8vh;
 }
 
+.descripcion {
+  margin: 0 auto;
+  font-size: 25px;
+}
+
 footer {
   grid-area: footer;
+  margin-top: 10vh;
+  background-color: #d648a7;
+  border-top: solid black;
+  border-radius: 20px 20px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+footer ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+footer div {
+  margin: 0 auto;
+}
+
+.iconsFooter {
+  width: 10vh;
+  height: 10vh;
 }
 
 .bordersAndRadius, .myBorders {
@@ -133,7 +159,7 @@ footer {
   border-radius: 5px;
 }
 
-.myButton, a {
+a {
   color: white;
   text-decoration: none;
   text-shadow: 1px 1px 2px black;
@@ -219,7 +245,8 @@ div#logo:hover {
 .card--modifier {
   color: black;
   background-color: white;
-  width: 13vw;
+  border: solid black;
+  width: 12vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -234,14 +261,19 @@ div#logo:hover {
   color: white;
   background-color: #63BFA5;
 }
+.btn--color:hover {
+  background-color: #25856a;
+  color: white;
+}
 
 .mainSignUp {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: baseline;
 }
 
 fieldset {
+  border: solid black;
   font-size: 17px;
   display: flex;
   flex-direction: column;
@@ -252,12 +284,27 @@ fieldset div {
   justify-content: space-evenly;
 }
 
+.containerNavSignUp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 24vh;
+  font-size: 100px;
+}
+.containerNavSignUp a:hover {
+  color: black;
+}
+
 body {
   background-color: #d648a7;
   background-image: linear-gradient(to bottom, #d648a7, #ff8fda);
   font-family: "Staatliches";
   font-size: 17px;
   color: white;
+}
+
+li {
+  list-style: none;
 }
 
 /*# sourceMappingURL=style.css.map */

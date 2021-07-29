@@ -1,14 +1,13 @@
 $size:5vh;
 .containerNav {
     grid-area: nav;
-    margin-right: 7vh;
-    margin-left: 7vh;
+    margin-right: 2vw;
+    margin-left: 2.5vw;
     display: flex;
     &__pages {
         margin-top: 17vh;
         li {
             padding-top: 3px;
-            list-style: none;
             width: $size*1.8;
             height: $size*2;
             margin-bottom: 6vh;

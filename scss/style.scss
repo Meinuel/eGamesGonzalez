@@ -9,7 +9,7 @@
 @import 'mainLive';
 @import 'mainPrincipal';
 @import 'mainTop';
-@import 'login';
+@import 'signUp';
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Staatliches&display=swap');
 body {
     background-color: #d648a7;
@@ -17,4 +17,8 @@ body {
     font-family: 'Staatliches';
     font-size: 17px;
     color: white;
+}
+
+li {
+    list-style: none;
 }

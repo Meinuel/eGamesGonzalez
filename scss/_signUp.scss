@@ -1,0 +1,30 @@
+.mainSignUp {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+fieldset {
+    border: solid black;
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.containerNavSignUp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 24vh;
+    font-size: 100px;
+    a {
+        &:hover {
+            color: black;
+        }
+    }
+}
