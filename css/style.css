@@ -2,23 +2,24 @@
 #grilla {
   display: grid;
   grid-template-areas: "logo header" "nav main" "footer footer";
-  grid-template-rows: 11vh 82vh 20vh;
-  grid-template-columns: 20vw 78.9vw;
+  grid-template-rows: 11vh 82vh 15vh;
+  grid-template-columns: 20% 80%;
   grid-row-gap: 4vh;
 }
 
 .containerNav {
   grid-area: nav;
-  margin-right: 2vw;
+  margin-right: 3vh;
   margin-left: 2.5vw;
   display: flex;
+  justify-content: space-evenly;
 }
 .containerNav__pages {
   margin-top: 17vh;
 }
 .containerNav__pages li {
   padding-top: 3px;
-  width: 9vh;
+  width: 10vh;
   height: 10vh;
   margin-bottom: 6vh;
 }
@@ -39,7 +40,7 @@
 }
 .containerNav__cables {
   margin-top: 19.5vh;
-  width: 14vh;
+  width: 12vh;
   height: 63vh;
 }
 
@@ -90,9 +91,6 @@
   align-items: center;
 }
 
-.containerSection {
-  letter-spacing: 2px;
-}
 .containerSection a {
   align-self: flex-end;
   margin-right: 30px;
@@ -104,11 +102,13 @@
   align-items: center;
   font-family: "Bebas Neue";
   margin-bottom: 2.5vh;
+  letter-spacing: 2px;
 }
 .containerSection__cards {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .iconsTitle {
@@ -126,21 +126,20 @@
   font-size: 25px;
 }
 
-footer {
+.myFooter {
   grid-area: footer;
-  margin-top: 10vh;
+  margin-top: 5vh;
   background-color: #d648a7;
   border-top: solid black;
-  border-radius: 20px 20px 0px 0px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-footer ul {
+.myFooter ul {
   display: flex;
   justify-content: space-evenly;
 }
-footer div {
+.myFooter div {
   margin: 0 auto;
 }
 
@@ -247,6 +246,7 @@ div#logo:hover {
   background-color: white;
   border: solid black;
   width: 12vw;
+  height: 40vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -266,6 +266,40 @@ div#logo:hover {
   color: white;
 }
 
+.card--fadein {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+}
+
+.card2--fadein {
+  animation-name: fadeIn;
+  animation-duration: 2s;
+}
+
+.card3--fadein {
+  animation-name: fadeIn;
+  animation-duration: 3s;
+}
+
+.card4--fadein {
+  animation-name: fadeIn;
+  animation-duration: 4s;
+}
+
+.card5--fadein {
+  animation-name: fadeIn;
+  animation-duration: 5s;
+}
+
+.body--SignUp {
+  height: 100%;
+}
+
+.headerSignUp {
+  width: 100%;
+  font-size: 2rem;
+}
+
 .mainSignUp {
   display: flex;
   justify-content: space-around;
@@ -273,8 +307,8 @@ div#logo:hover {
 }
 
 fieldset {
+  padding: 20px;
   border: solid black;
-  font-size: 17px;
   display: flex;
   flex-direction: column;
 }
@@ -284,22 +318,37 @@ fieldset div {
   justify-content: space-evenly;
 }
 
-.containerNavSignUp {
+.footerSignUp {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 24vh;
-  font-size: 100px;
+  font-size: 2.5rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10vh;
 }
-.containerNavSignUp a:hover {
+.footerSignUp a:hover {
   color: black;
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  background-color: #d648a7;
   background-image: linear-gradient(to bottom, #d648a7, #ff8fda);
   font-family: "Staatliches";
-  font-size: 17px;
+  font-size: 2.5vh;
   color: white;
 }
 

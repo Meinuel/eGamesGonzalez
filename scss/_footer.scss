@@ -1,9 +1,8 @@
-footer {
+.myFooter {
     grid-area: footer;
-    margin-top: 10vh;
+    margin-top: 5vh;
     background-color: #d648a7;
     border-top: solid black;
-    border-radius: 20px 20px 0px 0px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

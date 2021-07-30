@@ -1,16 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="body--SignUp">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../assets/icons/logo.ico" type="image/x-icon">
+    <!-- Meta etiquetas -- SEO -- entre 70 y 320 caracteres-->
+    <meta name="description" content="Seccion de registro o login para usuarios de eGames">
+    <!-- Keyword, separadas por comas / 15 -->
+    <meta name="keywords" content="foro, gaming, videogames, esports">
+    <!--Favicon , icono-->
+    <link rel="shortcut icon" href="assets/icons/logo.ico" type="image/x-icon">
+    <!--Open graph, controla como se mostrara una URL cuando se compara en redes sociales-->
+    <meta property="og:title" content="eGames Registro | El foro perfecto para vicios">
+    <meta property="og:url" content="https://meinuel.github.io/eGamesGonzalez/secciones/eGamesSignUp.html">
+    <meta property="og:image" content="https://">
+    <meta property="og:description" content="Seccion de registro o login para usuarios de eGames">
+    <meta property="og:locale" content="es_ES">
+
     <link rel="stylesheet" href="../css/style.css">
-    <title>Registrate</title>
+    <!--Title -- Tiene que tener entre 35 y 65 caracteres-->
+    <title>eGames Registro | El foro perfecto para vicios</title>
 </head>
 
 <body>
+    <header class="headerSignUp">
+        <div>Te damos la bienvenida a nuestra comunidad!</div>
+    </header>
     <main class="mainSignUp">
         <form action="login_page.php" id="formEmail" method="POST" enctype="multipart/form-data">
             <fieldset>
@@ -28,7 +44,7 @@
                         <option value="Hombre">Hombre</option>
                         <option value="Mujer">Mujer</option>
                         <option value="Otro">Otro</option>
-                    </select><br>
+                </select><br>
                 <div>
                     <input type="submit" id="signUpButton" name="signUpButton" value="SIGN UP" class="myButton bordersAndRadius">
                     <input type="reset" id="resetButton" name="resetButton" value="RESET" class="myButton bordersAndRadius">
@@ -43,11 +59,9 @@
             <img loading="lazy" src="../assets/gif/signup.gif" alt="signup gif">
         </aside>
     </main>
-    <nav class="containerNavSignUp">
-
+    <footer class="footerSignUp">
         <a href="../index.html">volver al inicio</a>
-
-    </nav>
+    </footer>
 </body>
 
 </html>

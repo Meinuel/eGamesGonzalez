@@ -17,7 +17,6 @@ $size:9vh;
 
 .containerSection {
     @extend %flexColEvenly;
-    letter-spacing: 2px;
     a {
         align-self: flex-end;
         margin-right: 30px;
@@ -29,11 +28,13 @@ $size:9vh;
         align-items: center;
         font-family: 'Bebas Neue';
         margin-bottom: 2.5vh;
+        letter-spacing: 2px;
     }
     &__cards {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+        flex-wrap: wrap;
     }
 }
 

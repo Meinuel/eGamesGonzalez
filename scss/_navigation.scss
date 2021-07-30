@@ -1,14 +1,15 @@
 $size:5vh;
 .containerNav {
     grid-area: nav;
-    margin-right: 2vw;
+    margin-right: 3vh;
     margin-left: 2.5vw;
     display: flex;
+    justify-content: space-evenly;
     &__pages {
         margin-top: 17vh;
         li {
             padding-top: 3px;
-            width: $size*1.8;
+            width: $size*2;
             height: $size*2;
             margin-bottom: 6vh;
             a {
@@ -30,7 +31,7 @@ $size:5vh;
     }
     &__cables {
         margin-top: 19.5vh;
-        width: 14vh;
+        width: 12vh;
         height: 63vh;
     }
 }

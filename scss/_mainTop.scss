@@ -3,6 +3,7 @@
     background-color: white;
     border: solid black;
     width: 12vw;
+    height: 40vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,4 +21,29 @@
         background-color: #25856a;
         color: white;
     }
+}
+
+.card--fadein {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+}
+
+.card2--fadein {
+    animation-name: fadeIn;
+    animation-duration: 2s;
+}
+
+.card3--fadein {
+    animation-name: fadeIn;
+    animation-duration: 3s;
+}
+
+.card4--fadein {
+    animation-name: fadeIn;
+    animation-duration: 4s;
+}
+
+.card5--fadein {
+    animation-name: fadeIn;
+    animation-duration: 5s;
 }

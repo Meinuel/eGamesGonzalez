@@ -5,15 +5,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../assets/icons/logo.ico" type="image/x-icon">
+    <!-- Meta etiquetas -- SEO -- entre 70 y 320 caracteres-->
+    <meta name="description" content="Foro dedicado a compartir contenido de videojuegos">
+    <!-- Keyword, separadas por comas / 15 -->
+    <meta name="keywords" content="foro, gaming, videogames, esports">
+    <!--Favicon , icono-->
+    <link rel="shortcut icon" href="assets/icons/logo.ico" type="image/x-icon">
+    <!--Open graph, controla como se mostrara una URL cuando se compara en redes sociales-->
+    <meta property="og:title" content="eGames Top Players | El foro perfecto para vicios">
+    <meta property="og:url" content="https://meinuel.github.io/eGamesGonzalez/secciones/eGamesTopPlayers.html">
+    <meta property="og:description" content="Seccion de eGames dedicada a mostrar los usuarios mas populares y activos del foro">
+    <meta property="og:locale" content="es_ES">
+
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
     <link rel="stylesheet" href="../css/style.css">
-    <title>Géneros</title>
+    <!--Title -- Tiene que tener entre 35 y 65 caracteres-->
+    <title>eGames Top Players | El foro perfecto para vicios</title>
 </head>
 
 <body id="grilla">
@@ -25,7 +38,7 @@
             <input type="text" class="myHeader__input myRadius" name="searchInput" id="searchInput" placeholder="Busca tu video">
         </div>
         <div>
-            <a href="secciones/eGamesSignUp.html" class="myButton bordersAndRadius">Upload</a>
+            <a href="eGamesSignUp.html" class="myButton bordersAndRadius">Upload</a>
         </div>
         <div>
             <a href="eGamesSignUp.html" class="myButton bordersAndRadius">login</a>
@@ -38,7 +51,7 @@
         <div class="containerNav__pages">
             <ul>
                 <li>
-                    <a href="../index.html"><img class="iconsNav" src="../assets/icons/principal.png" alt="main">Principal</a>
+                    <a href="../index.html"><img class="iconsNav" src="../assets/icons/principal.png" alt="main">Inicio</a>
                 </li>
                 <li>
                     <a href="eGamesLive.html"><img class="iconsNav iconsNav--live" src="../assets/icons/live.png" alt="main">Live</a>
@@ -64,7 +77,7 @@
             <h2>Top Players</h2>
         </div>
         <div class="containerSection__cards">
-            <div class="card card--modifier">
+            <div class="card card--modifier card--fadein">
                 <img class="card-img-top card-img-top--resize" src="../assets/images/kelvin.jpg" alt="Card image">
                 <div class="card-body">
                     <h4 class="card-title">Kelvin The Chenkais</h4>
@@ -72,15 +85,15 @@
                     <a href="#" class="btn btn--color">See Profile</a>
                 </div>
             </div>
-            <div class="card card--modifier">
+            <div class="card card--modifier card2--fadein">
                 <img class="card-img-top card-img-top--resize" src="../assets/images/volpineitor.jpg" alt="Card image">
                 <div class="card-body">
-                    <h4 class="card-title">Dark Volpineneneitor</h4>
+                    <h4 class="card-title">Dark volpineitor</h4>
                     <p class="card-text">Ranking 2º</p>
                     <a href="#" class="btn btn--color">See Profile</a>
                 </div>
             </div>
-            <div class="card card--modifier">
+            <div class="card card--modifier card3--fadein">
                 <img class="card-img-top card-img-top--resize" src="../assets/images/julthus.jpg" alt="Card image">
                 <div class="card-body">
                     <h4 class="card-title">Julthor The Great</h4>
@@ -88,7 +101,7 @@
                     <a href="#" class="btn btn--color">See Profile</a>
                 </div>
             </div>
-            <div class="card card--modifier">
+            <div class="card card--modifier card4--fadein">
                 <img class="card-img-top card-img-top--resize" src="../assets/images/meinuel.jpg" alt="Card image">
                 <div class="card-body">
                     <h4 class="card-title">Meinuel of Peronia</h4>
@@ -96,7 +109,7 @@
                     <a href="#" class="btn btn--color">See Profile</a>
                 </div>
             </div>
-            <div class="card card--modifier">
+            <div class="card card--modifier card5--fadein">
                 <img class="card-img-top card-img-top--resize" src="../assets/images/sofula.png" alt="Card image">
                 <div class="card-body">
                     <h4 class="card-title">Sofula Queen of Catan</h4>
@@ -108,7 +121,7 @@
         <div class="descripcion">Create una cuenta, subí contenido y competí para estar entre los jugadores mas populares de eGames!</div>
     </main>
 
-    <footer>
+    <footer class="myFooter">
         <div>Buscanos en las redes</div>
         <ul>
             <li>
