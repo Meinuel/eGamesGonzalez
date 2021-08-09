@@ -16,7 +16,7 @@ $size:9vh;
 %containerMain {
     grid-area: main;
     background-color: #b63e8e;
-    margin-right: 3vw;
+    margin-right: 15px;
     &--live {
         align-items: center;
     }
@@ -39,7 +39,6 @@ $size:9vh;
 
 .containerSection {
     @include flex(1);
-    height: 43vh;
     &__title {
         display: flex;
         justify-content: center;

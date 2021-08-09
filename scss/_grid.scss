@@ -1,7 +1,7 @@
 #grilla {
     display: grid;
     grid-template-areas: "logo header" "nav main" "footer footer";
-    grid-template-rows: 11vh 86vh 15vh;
-    grid-template-columns: 20% 80%;
-    grid-row-gap: 1vh;
+    grid-template-rows: 80px 640px 100px;
+    grid-template-columns: 300px 1200px;
+    grid-row-gap: 5px;
 }

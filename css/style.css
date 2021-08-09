@@ -2,26 +2,26 @@
 #grilla {
   display: grid;
   grid-template-areas: "logo header" "nav main" "footer footer";
-  grid-template-rows: 11vh 86vh 15vh;
-  grid-template-columns: 20% 80%;
-  grid-row-gap: 1vh;
+  grid-template-rows: 80px 640px 100px;
+  grid-template-columns: 300px 1200px;
+  grid-row-gap: 5px;
 }
 
 .containerNav {
   grid-area: nav;
-  margin-right: 3vh;
-  margin-left: 2.5vw;
+  margin-right: 20px;
+  margin-left: 42px;
   display: flex;
   justify-content: space-evenly;
 }
 .containerNav__pages {
-  margin-top: 21vh;
+  margin-top: 140px;
 }
 .containerNav__pages li {
   padding-top: 3px;
-  width: 10vh;
-  height: 10vh;
-  margin-bottom: 6vh;
+  width: 78px;
+  height: 78px;
+  margin-bottom: 43px;
 }
 .containerNav__pages li a {
   margin-top: 5px;
@@ -39,18 +39,18 @@
   color: gold;
 }
 .containerNav__cables {
-  margin-top: 23.5vh;
-  width: 12vh;
-  height: 63vh;
+  margin-top: 145px;
+  width: 100px;
+  height: 500px;
 }
 
 .iconsNav {
-  width: 5vh;
-  height: 5vh;
+  width: 39px;
+  height: 39px;
 }
 
 .iconsNav--live {
-  width: 6vh;
+  width: 46.8px;
 }
 
 .myHeader {
@@ -58,7 +58,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-right: 3vw;
+  margin-right: 15px;
 }
 .myHeader a {
   display: flex;
@@ -72,14 +72,14 @@
   color: white;
 }
 .myHeader__input {
-  width: 100vh;
-  height: 5vh;
+  width: 800px;
+  height: 40px;
 }
 
 .containerMainLive, .containerMainSeccion, .containerMainPrincipal {
   grid-area: main;
   background-color: #b63e8e;
-  margin-right: 3vw;
+  margin-right: 15px;
 }
 .containerMainPrincipal {
   display: flex;
@@ -104,7 +104,6 @@
   display: flex;
   flex-direction: column;
   justify-content: start;
-  height: 43vh;
 }
 .containerSection__title {
   display: flex;
@@ -180,8 +179,8 @@ a {
 }
 
 .myButton {
-  width: 15vh;
-  height: 5vh;
+  width: 130px;
+  height: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -190,7 +189,7 @@ a {
 div#logo {
   grid-area: logo;
   margin: auto;
-  transform: rotate(25deg);
+  transform: rotate(17deg);
 }
 div#logo:hover {
   transition-duration: 2s;
@@ -202,9 +201,9 @@ div#logo:hover {
 }
 
 .logoIcon {
-  width: 30vh;
-  height: 25vh;
-  margin-top: 2.5vh;
+  width: 225px;
+  height: 175px;
+  margin-top: 12px;
 }
 
 .generosCard {
@@ -230,22 +229,22 @@ div#logo:hover {
 }
 
 .iconsPrincipal {
-  width: 10vh;
-  height: 10vh;
+  width: 80px;
+  height: 80px;
 }
 
 .mainCard {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 16vw;
-  height: 25vh;
+  width: 220px;
+  height: 190px;
   animation-name: fadeIn;
   animation-duration: 2s;
 }
 .mainCard img {
-  width: 100%;
-  height: 70%;
+  width: 220px;
+  height: 120px;
 }
 .mainCard div {
   font-size: 0.8rem;
@@ -368,7 +367,7 @@ fieldset div {
 body {
   background-image: linear-gradient(to bottom, #d648a7, #ff8fda);
   font-family: "Staatliches";
-  font-size: 2.5vh;
+  font-size: 18px;
   color: white;
 }
 

@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-right: 3vw;
+    margin-right: 15px;
     a {
         display: flex;
         flex-direction: column;
@@ -16,7 +16,7 @@
         }
     }
     &__input {
-        width: 100vh;
-        height: 5vh;
+        width: 800px;
+        height: 40px;
     }
 }

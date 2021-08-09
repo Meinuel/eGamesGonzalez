@@ -1,13 +1,14 @@
-$cardSize: 16vw,
-25vh;
+$cardSize: 220px,
+190px;
 $titleName: 'tendencias',
 'recomendaciones';
 .iconsPrincipal {
-    width: 10vh;
-    height: 10vh;
+    width: 80px;
+    height: 80px;
 }
 
 .mainCard {
+    // background-color: #d668b2;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -16,10 +17,11 @@ $titleName: 'tendencias',
     animation-name: fadeIn;
     animation-duration: 2s;
     img {
-        width: 100%;
-        height: 70%;
+        width: nth($cardSize, 1);
+        height: 120px;
     }
     div {
+        // margin-left: 10px;
         font-size: 0.8rem;
     }
 }
