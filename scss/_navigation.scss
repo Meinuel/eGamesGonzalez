@@ -6,7 +6,7 @@ $size:5vh;
     display: flex;
     justify-content: space-evenly;
     &__pages {
-        margin-top: 17vh;
+        margin-top: 21vh;
         li {
             padding-top: 3px;
             width: $size*2;
@@ -30,7 +30,7 @@ $size:5vh;
         }
     }
     &__cables {
-        margin-top: 19.5vh;
+        margin-top: 23.5vh;
         width: 12vh;
         height: 63vh;
     }

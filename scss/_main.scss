@@ -1,27 +1,45 @@
 $size:9vh;
-%flexColEvenly {
+@mixin flex($seccion) {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    @if $seccion==1 {
+        justify-content: start;
+    }
+    @else {
+        justify-content: space-evenly;
+        @if $seccion==2 {
+            align-items: center;
+        }
+    }
 }
 
-.containerMain {
+%containerMain {
     grid-area: main;
     background-color: #b63e8e;
     margin-right: 3vw;
-    @extend %flexColEvenly;
     &--live {
         align-items: center;
     }
 }
 
+.containerMainPrincipal {
+    @extend %containerMain;
+    @include flex(1);
+}
+
+.containerMainSeccion {
+    @extend %containerMain;
+    @include flex(0);
+}
+
+.containerMainLive {
+    @extend %containerMain;
+    @include flex(2);
+}
+
 .containerSection {
-    @extend %flexColEvenly;
-    a {
-        align-self: flex-end;
-        margin-right: 30px;
-        margin-top: 10px;
-    }
+    @include flex(1);
+    height: 43vh;
     &__title {
         display: flex;
         justify-content: center;
@@ -35,6 +53,11 @@ $size:9vh;
         justify-content: space-evenly;
         align-items: center;
         flex-wrap: wrap;
+    }
+    a {
+        align-self: flex-end;
+        margin-right: 30px;
+        margin-top: auto;
     }
 }
 

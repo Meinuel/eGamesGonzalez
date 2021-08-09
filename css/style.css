@@ -2,9 +2,9 @@
 #grilla {
   display: grid;
   grid-template-areas: "logo header" "nav main" "footer footer";
-  grid-template-rows: 11vh 82vh 15vh;
+  grid-template-rows: 11vh 86vh 15vh;
   grid-template-columns: 20% 80%;
-  grid-row-gap: 4vh;
+  grid-row-gap: 1vh;
 }
 
 .containerNav {
@@ -15,7 +15,7 @@
   justify-content: space-evenly;
 }
 .containerNav__pages {
-  margin-top: 17vh;
+  margin-top: 21vh;
 }
 .containerNav__pages li {
   padding-top: 3px;
@@ -39,7 +39,7 @@
   color: gold;
 }
 .containerNav__cables {
-  margin-top: 19.5vh;
+  margin-top: 23.5vh;
   width: 12vh;
   height: 63vh;
 }
@@ -76,25 +76,35 @@
   height: 5vh;
 }
 
-.containerSection, .containerMain {
+.containerMainLive, .containerMainSeccion, .containerMainPrincipal {
+  grid-area: main;
+  background-color: #b63e8e;
+  margin-right: 3vw;
+}
+.containerMainPrincipal {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.containerMainSeccion {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
 
-.containerMain {
-  grid-area: main;
-  background-color: #b63e8e;
-  margin-right: 3vw;
-}
-.containerMain--live {
+.containerMainLive {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
 }
 
-.containerSection a {
-  align-self: flex-end;
-  margin-right: 30px;
-  margin-top: 10px;
+.containerSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  height: 43vh;
 }
 .containerSection__title {
   display: flex;
@@ -109,6 +119,11 @@
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
+}
+.containerSection a {
+  align-self: flex-end;
+  margin-right: 30px;
+  margin-top: auto;
 }
 
 .iconsTitle {
@@ -175,7 +190,7 @@ a {
 div#logo {
   grid-area: logo;
   margin: auto;
-  transform: rotate(15deg);
+  transform: rotate(25deg);
 }
 div#logo:hover {
   transition-duration: 2s;
@@ -183,13 +198,13 @@ div#logo:hover {
 }
 
 .logoTransition {
-  transition-duration: 2s;
+  transition-duration: 3s;
 }
 
 .logoIcon {
   width: 30vh;
   height: 25vh;
-  margin-top: 10px;
+  margin-top: 2.5vh;
 }
 
 .generosCard {
@@ -203,7 +218,6 @@ div#logo:hover {
 }
 
 .carrouselLive {
-  background-color: gold;
   width: 70vh;
   height: 50vh;
   animation-name: fadeIn;
@@ -221,14 +235,20 @@ div#logo:hover {
 }
 
 .mainCard {
-  width: 30vh;
-  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 16vw;
+  height: 25vh;
   animation-name: fadeIn;
   animation-duration: 2s;
 }
-.mainCard:hover {
-  width: 32vh;
-  height: 22vh;
+.mainCard img {
+  width: 100%;
+  height: 70%;
+}
+.mainCard div {
+  font-size: 0.8rem;
 }
 
 .a--tendencias:hover {
