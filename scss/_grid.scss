@@ -1,7 +1,14 @@
 #grilla {
     display: grid;
     grid-template-areas: "logo header" "nav main" "footer footer";
-    grid-template-rows: 80px 640px 100px;
-    grid-template-columns: 300px 1200px;
-    grid-row-gap: 5px;
+    grid-template-rows: 90px 14fr 4fr;
+    grid-template-columns: 1fr 4fr;
+    // grid-row-gap: 5px;
+}
+
+@media (min-width: 360px) and (max-width: 415px) {
+    #grilla {
+        grid-template-rows: 200px 1730px auto;
+        grid-template-columns: 240px 860px;
+    }
 }

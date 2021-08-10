@@ -12,6 +12,9 @@ $size:39px;
             width: $size*2;
             height: $size*2;
             margin-bottom: 43px;
+            @media (min-width: 360px) and (max-width: 415px) {
+                margin-bottom: 300px;
+            }
             a {
                 margin-top: 5px;
                 display: flex;
@@ -33,6 +36,9 @@ $size:39px;
         margin-top: 145px;
         width: 100px;
         height: 500px;
+        @media (min-width: 360px) and (max-width: 415px) {
+            display: none;
+        }
     }
 }
 
@@ -44,4 +50,17 @@ $size:39px;
 
 .iconsNav--live {
     width: $size *1.2;
+}
+
+@media (min-width: 360px) and (max-width: 415px) {
+    .iconsNav {
+        width: $size * 2.5;
+        height: $size * 2.5;
+    }
+    .iconsNav--live {
+        width: ($size *2.5)*1.2;
+    }
+    .containerNav {
+        margin-left: 20px;
+    }
 }

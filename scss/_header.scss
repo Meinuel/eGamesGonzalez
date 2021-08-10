@@ -18,5 +18,21 @@
     &__input {
         width: 800px;
         height: 40px;
+        @media (min-width: 360px) and (max-width: 415px) {
+            width: 600px;
+            height: 80px;
+        }
+    }
+}
+
+.myButton {
+    width: 130px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media (min-width: 360px) and (max-width: 415px) {
+        width: 130px;
+        height: 80px;
     }
 }

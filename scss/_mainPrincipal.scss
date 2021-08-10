@@ -8,7 +8,6 @@ $titleName: 'tendencias',
 }
 
 .mainCard {
-    // background-color: #d668b2;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -21,7 +20,6 @@ $titleName: 'tendencias',
         height: 120px;
     }
     div {
-        // margin-left: 10px;
         font-size: 0.8rem;
     }
 }
@@ -34,4 +32,20 @@ $titleName: 'tendencias',
 .a--recomendaciones:hover {
     text-decoration: none;
     color: #1BBF54;
+}
+
+@media (min-width: 360px) and (max-width: 415px) {
+    .iconsPrincipal {
+        width: 160px;
+        height: 160px;
+    }
+    .mainCard {
+        img {
+            width: 200px;
+            height: 100px;
+        }
+        div {
+            display: none;
+        }
+    }
 }

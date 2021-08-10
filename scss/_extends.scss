@@ -33,11 +33,3 @@ a {
     @extend %radius;
     @extend %borders;
 }
-
-.myButton {
-    width: 130px;
-    height: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
