@@ -18,7 +18,6 @@
 }
 
 body {
-    // background-image: linear-gradient(to bottom, #d648a7, #ff8fda);
     background-color: #ff77d2;
     font-family: 'Staatliches';
     font-size: 18px;
@@ -29,11 +28,4 @@ li {
     list-style: none;
 }
 
-@media (min-width: 360px) and (max-width: 415px) {
-    body {
-        font-size: 33px;
-        h2 {
-            font-size: 4rem;
-        }
-    }
-}
+@media (min-width: 360px) and (max-width: 415px) {}

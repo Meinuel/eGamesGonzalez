@@ -7,13 +7,16 @@ $size:39px;
     justify-content: space-evenly;
     &__pages {
         margin-top: 140px;
+        @media (min-width: 360px) and (max-width: 415px) {
+            margin-top: 20px;
+        }
         li {
             padding-top: 3px;
             width: $size*2;
             height: $size*2;
             margin-bottom: 43px;
             @media (min-width: 360px) and (max-width: 415px) {
-                margin-bottom: 300px;
+                margin-bottom: 80px;
             }
             a {
                 margin-top: 5px;
@@ -53,14 +56,16 @@ $size:39px;
 }
 
 @media (min-width: 360px) and (max-width: 415px) {
+    $reSize: 0.7;
     .iconsNav {
-        width: $size * 2.5;
-        height: $size * 2.5;
+        width: $size * $reSize;
+        height: $size * $reSize;
     }
     .iconsNav--live {
-        width: ($size *2.5)*1.2;
+        width: ($size * $reSize)*1.2;
     }
     .containerNav {
-        margin-left: 20px;
+        margin-left: 5px;
+        margin-right: 5px;
     }
 }

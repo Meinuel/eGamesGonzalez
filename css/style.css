@@ -8,8 +8,8 @@
 
 @media (min-width: 360px) and (max-width: 415px) {
   #grilla {
-    grid-template-rows: 200px 1730px auto;
-    grid-template-columns: 240px 860px;
+    grid-template-rows: 60px 600px auto;
+    grid-template-columns: 80px 305px;
   }
 }
 .containerNav {
@@ -22,6 +22,11 @@
 .containerNav__pages {
   margin-top: 140px;
 }
+@media (min-width: 360px) and (max-width: 415px) {
+  .containerNav__pages {
+    margin-top: 20px;
+  }
+}
 .containerNav__pages li {
   padding-top: 3px;
   width: 78px;
@@ -30,7 +35,7 @@
 }
 @media (min-width: 360px) and (max-width: 415px) {
   .containerNav__pages li {
-    margin-bottom: 300px;
+    margin-bottom: 80px;
   }
 }
 .containerNav__pages li a {
@@ -70,16 +75,17 @@
 
 @media (min-width: 360px) and (max-width: 415px) {
   .iconsNav {
-    width: 97.5px;
-    height: 97.5px;
+    width: 27.3px;
+    height: 27.3px;
   }
 
   .iconsNav--live {
-    width: 117px;
+    width: 32.76px;
   }
 
   .containerNav {
-    margin-left: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
   }
 }
 .myHeader {
@@ -106,8 +112,8 @@
 }
 @media (min-width: 360px) and (max-width: 415px) {
   .myHeader__input {
-    width: 600px;
-    height: 80px;
+    width: 170px;
+    height: 40px;
   }
 }
 
@@ -120,8 +126,8 @@
 }
 @media (min-width: 360px) and (max-width: 415px) {
   .myButton {
-    width: 130px;
-    height: 80px;
+    width: 60px;
+    height: 40px;
   }
 }
 
@@ -163,17 +169,10 @@
   letter-spacing: 2px;
 }
 .containerSection__cards {
-  background-color: red;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-}
-@media (min-width: 360px) and (max-width: 415px) {
-  .containerSection__cards {
-    max-width: 900px;
-    min-height: 500px;
-  }
 }
 .containerSection a {
   align-self: flex-end;
@@ -259,6 +258,13 @@ div#logo:hover {
   margin-top: 12px;
 }
 
+@media (min-width: 360px) and (max-width: 415px) {
+  .logoIcon {
+    width: 80px;
+    height: 65px;
+    margin-top: 0px;
+  }
+}
 .generosCard {
   background-color: #ebe9e9;
   color: black;
@@ -315,13 +321,13 @@ div#logo:hover {
 
 @media (min-width: 360px) and (max-width: 415px) {
   .iconsPrincipal {
-    width: 160px;
-    height: 160px;
+    width: 60px;
+    height: 60px;
   }
 
   .mainCard img {
-    width: 200px;
-    height: 100px;
+    width: 150px;
+    height: 80px;
   }
   .mainCard div {
     display: none;
@@ -440,15 +446,6 @@ body {
 
 li {
   list-style: none;
-}
-
-@media (min-width: 360px) and (max-width: 415px) {
-  body {
-    font-size: 33px;
-  }
-  body h2 {
-    font-size: 4rem;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
