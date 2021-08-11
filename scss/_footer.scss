@@ -19,3 +19,10 @@
     width: 10vh;
     height: 10vh;
 }
+
+@media (min-width: 280px) and (max-width: 550px) {
+    .iconsFooter {
+        width: 30px;
+        height: 30px;
+    }
+}

@@ -15,9 +15,16 @@ $titleName: 'tendencias',
     height: nth($cardSize, 2);
     animation-name: fadeIn;
     animation-duration: 2s;
+    &--margin {
+        margin-right: 0px;
+        @media (min-width: 280px) and (max-width: 800px) {
+            margin-right: 15px;
+        }
+    }
     img {
         width: nth($cardSize, 1);
         height: 120px;
+        border-radius: 10px;
     }
     div {
         font-size: 0.8rem;
@@ -34,18 +41,101 @@ $titleName: 'tendencias',
     color: #1BBF54;
 }
 
-@media (min-width: 360px) and (max-width: 415px) {
+@media (min-width: 200px) and (max-width: 1024px) {
     .iconsPrincipal {
-        width: 60px;
-        height: 60px;
+        width: 45px;
+        height: 45px;
     }
     .mainCard {
-        img {
-            width: 150px;
-            height: 80px;
-        }
+        align-items: center;
+        justify-content: center;
+        margin-left: 15px;
         div {
             display: none;
+        }
+    }
+}
+
+@media (min-width: 200px) and (max-width: 299px) {
+    $cardSize: 200px, 140px;
+    .mainCard {
+        width: nth($cardSize, 1);
+        height: nth($cardSize, 2);
+        img {
+            width: nth($cardSize, 1);
+            height: nth($cardSize, 2);
+        }
+    }
+}
+
+@media (min-width: 300px) and (max-width: 374px) {
+    $cardSize: 280px, 160px;
+    .mainCard {
+        width: nth($cardSize, 1);
+        height: nth($cardSize, 2);
+        img {
+            width: nth($cardSize, 1);
+            height: nth($cardSize, 2);
+        }
+    }
+}
+
+@media (min-width: 375px) and (max-width: 410px) {
+    $cardSize: 300px, 170px;
+    .mainCard {
+        width: nth($cardSize, 1);
+        height: nth($cardSize, 2);
+        img {
+            width: nth($cardSize, 1);
+            height: nth($cardSize, 2);
+        }
+    }
+}
+
+@media (min-width: 410px) and (max-width: 500px) {
+    $cardSize: 322px, 180px;
+    .mainCard {
+        width: nth($cardSize, 1);
+        height: nth($cardSize, 2);
+        img {
+            width: nth($cardSize, 1);
+            height: nth($cardSize, 2);
+        }
+    }
+}
+
+@media (min-width: 500px) and (max-width: 600px) {
+    $cardSize: 205px, 140px;
+    .mainCard {
+        width: nth($cardSize, 1);
+        height: nth($cardSize, 2);
+        img {
+            width: nth($cardSize, 1);
+            height: nth($cardSize, 2);
+        }
+    }
+}
+
+@media (min-width: 601px) and (max-width: 800px) {
+    $cardSize: 295px, 180px;
+    .mainCard {
+        width: nth($cardSize, 1);
+        height: nth($cardSize, 2);
+        img {
+            width: nth($cardSize, 1);
+            height: nth($cardSize, 2);
+        }
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1024px) {
+    $cardSize: 255px, 170px;
+    .mainCard {
+        width: nth($cardSize, 1);
+        height: nth($cardSize, 2);
+        img {
+            width: nth($cardSize, 1);
+            height: nth($cardSize, 2);
         }
     }
 }

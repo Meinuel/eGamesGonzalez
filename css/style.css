@@ -6,10 +6,46 @@
   grid-template-columns: 1fr 4fr;
 }
 
-@media (min-width: 360px) and (max-width: 415px) {
+@media (min-width: 200px) and (max-width: 300px) {
   #grilla {
-    grid-template-rows: 60px 600px auto;
-    grid-template-columns: 80px 305px;
+    grid-template-rows: 60px 575px auto;
+    grid-template-columns: 50px 230px;
+  }
+}
+@media (min-width: 300px) and (max-width: 374px) {
+  #grilla {
+    grid-template-rows: 60px 575px auto;
+    grid-template-columns: 50px 310px;
+  }
+}
+@media (min-width: 375px) and (max-width: 410px) {
+  #grilla {
+    grid-template-rows: 60px 590px auto;
+    grid-template-columns: 50px 325px;
+  }
+}
+@media (min-width: 400px) and (max-width: 500px) {
+  #grilla {
+    grid-template-rows: 70px 600px 150px;
+    grid-template-columns: 60px 350px;
+  }
+}
+@media (min-width: 501px) and (max-width: 600px) {
+  #grilla {
+    grid-template-rows: 70px 600px 150px;
+    grid-template-columns: 90px 450px;
+  }
+}
+@media (min-width: 550px) and (max-width: 800px) {
+  #grilla {
+    grid-template-rows: 70px 600px 150px;
+    grid-template-columns: 140px 625px;
+  }
+}
+@media (min-width: 801px) and (max-width: 1024px) {
+  #grilla {
+    grid-template-rows: 90px 580px 100px;
+    grid-template-columns: 200px 820px;
   }
 }
 .containerNav {
@@ -22,9 +58,14 @@
 .containerNav__pages {
   margin-top: 140px;
 }
-@media (min-width: 360px) and (max-width: 415px) {
+@media (min-width: 280px) and (max-width: 550px) {
   .containerNav__pages {
     margin-top: 20px;
+  }
+}
+@media (min-width: 801px) and (max-width: 1024px) {
+  .containerNav__pages {
+    margin-top: 85px;
   }
 }
 .containerNav__pages li {
@@ -33,7 +74,7 @@
   height: 78px;
   margin-bottom: 43px;
 }
-@media (min-width: 360px) and (max-width: 415px) {
+@media (min-width: 280px) and (max-width: 550px) {
   .containerNav__pages li {
     margin-bottom: 80px;
   }
@@ -53,14 +94,24 @@
   text-decoration: none;
   color: gold;
 }
+@media (min-width: 280px) and (max-width: 550px) {
+  .containerNav__pages li:hover {
+    background-color: #63BFA5;
+  }
+}
 .containerNav__cables {
   margin-top: 145px;
   width: 100px;
   height: 500px;
 }
-@media (min-width: 360px) and (max-width: 415px) {
+@media (min-width: 280px) and (max-width: 800px) {
   .containerNav__cables {
     display: none;
+  }
+}
+@media (min-width: 801px) and (max-width: 1024px) {
+  .containerNav__cables {
+    margin-top: 85px;
   }
 }
 
@@ -73,7 +124,7 @@
   width: 46.8px;
 }
 
-@media (min-width: 360px) and (max-width: 415px) {
+@media (min-width: 280px) and (max-width: 550px) {
   .iconsNav {
     width: 27.3px;
     height: 27.3px;
@@ -83,6 +134,18 @@
     width: 32.76px;
   }
 
+  .containerNav {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+@media (min-width: 500px) and (max-width: 800px) {
+  .containerNav {
+    margin-left: 10px;
+    margin-right: 5px;
+  }
+}
+@media (min-width: 801px) and (max-width: 1024px) {
   .containerNav {
     margin-left: 5px;
     margin-right: 5px;
@@ -110,10 +173,34 @@
   width: 800px;
   height: 40px;
 }
-@media (min-width: 360px) and (max-width: 415px) {
+@media (min-width: 801px) and (max-width: 1024px) {
   .myHeader__input {
-    width: 170px;
+    width: 500px;
     height: 40px;
+  }
+}
+@media (min-width: 601px) and (max-width: 800px) {
+  .myHeader__input {
+    width: 370px;
+    height: 40px;
+  }
+}
+@media (min-width: 501px) and (max-width: 600px) {
+  .myHeader__input {
+    width: 270px;
+    height: 40px;
+  }
+}
+@media (min-width: 300px) and (max-width: 500px) {
+  .myHeader__input {
+    width: 180px;
+    height: 40px;
+  }
+}
+@media (min-width: 200px) and (max-width: 299px) {
+  .myHeader__input {
+    width: 150px;
+    height: 30px;
   }
 }
 
@@ -124,13 +211,34 @@
   flex-direction: column;
   justify-content: center;
 }
-@media (min-width: 360px) and (max-width: 415px) {
+@media (min-width: 200px) and (max-width: 299px) {
+  .myButton {
+    width: 40px;
+    height: 30px;
+    font-size: 0.7rem;
+  }
+}
+@media (min-width: 300px) and (max-width: 500px) {
   .myButton {
     width: 60px;
-    height: 40px;
+  }
+}
+@media (min-width: 501px) and (max-width: 800px) {
+  .myButton {
+    width: 80px;
+  }
+}
+@media (min-width: 801px) and (max-width: 1024px) {
+  .myButton {
+    width: 100px;
   }
 }
 
+@media (min-width: 280px) and (max-width: 1024px) {
+  .myHeader {
+    margin-right: 0px;
+  }
+}
 .containerMainLive, .containerMainPrincipal, .containerMainSeccion {
   grid-area: main;
   background-color: #b63e8e;
@@ -168,11 +276,22 @@
   margin-bottom: 2.5vh;
   letter-spacing: 2px;
 }
+@media (min-width: 200px) and (max-width: 1024px) {
+  .containerSection__title {
+    margin-bottom: 0px;
+  }
+}
 .containerSection__cards {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  flex-wrap: wrap;
+  overflow: scroll;
+}
+@media (min-width: 200px) and (max-width: 1024px) {
+  .containerSection__cards {
+    justify-content: flex-start;
+    align-items: center;
+  }
 }
 .containerSection a {
   align-self: flex-end;
@@ -195,9 +314,22 @@
   font-size: 25px;
 }
 
-@media (min-width: 360px) and (max-width: 415px) {
+@media (min-width: 280px) and (max-width: 1024px) {
+  .containerMainSeccion, .containerMainPrincipal, .containerMainLive {
+    margin-right: 0px;
+  }
+
   .containerSection {
-    margin-bottom: 200px;
+    margin-bottom: 55px;
+  }
+  .containerSection a {
+    align-self: center;
+    margin-right: 0px;
+    margin-top: 10px;
+  }
+
+  h2 {
+    font-size: 1.2rem;
   }
 }
 .myFooter {
@@ -222,6 +354,12 @@
   height: 10vh;
 }
 
+@media (min-width: 280px) and (max-width: 550px) {
+  .iconsFooter {
+    width: 30px;
+    height: 30px;
+  }
+}
 .bordersAndRadius, .myBorders {
   border-style: solid;
   border-color: black;
@@ -258,10 +396,31 @@ div#logo:hover {
   margin-top: 12px;
 }
 
-@media (min-width: 360px) and (max-width: 415px) {
+@media (min-width: 280px) and (max-width: 500px) {
   .logoIcon {
-    width: 80px;
-    height: 65px;
+    width: 45px;
+    height: 40px;
+    margin-top: 5px;
+  }
+}
+@media (min-width: 501px) and (max-width: 600px) {
+  .logoIcon {
+    margin-top: 0px;
+    width: 60px;
+    height: 50px;
+  }
+}
+@media (min-width: 601px) and (max-width: 800px) {
+  .logoIcon {
+    width: 100px;
+    height: 80px;
+    margin-top: 90px;
+  }
+}
+@media (min-width: 801px) and (max-width: 1024px) {
+  .logoIcon {
+    width: 200px;
+    height: 150px;
     margin-top: 0px;
   }
 }
@@ -301,9 +460,18 @@ div#logo:hover {
   animation-name: fadeIn;
   animation-duration: 2s;
 }
+.mainCard--margin {
+  margin-right: 0px;
+}
+@media (min-width: 280px) and (max-width: 800px) {
+  .mainCard--margin {
+    margin-right: 15px;
+  }
+}
 .mainCard img {
   width: 220px;
   height: 120px;
+  border-radius: 10px;
 }
 .mainCard div {
   font-size: 0.8rem;
@@ -319,18 +487,89 @@ div#logo:hover {
   color: #1BBF54;
 }
 
-@media (min-width: 360px) and (max-width: 415px) {
+@media (min-width: 200px) and (max-width: 1024px) {
   .iconsPrincipal {
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
   }
 
-  .mainCard img {
-    width: 150px;
-    height: 80px;
+  .mainCard {
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
   }
   .mainCard div {
     display: none;
+  }
+}
+@media (min-width: 200px) and (max-width: 299px) {
+  .mainCard {
+    width: 200px;
+    height: 140px;
+  }
+  .mainCard img {
+    width: 200px;
+    height: 140px;
+  }
+}
+@media (min-width: 300px) and (max-width: 374px) {
+  .mainCard {
+    width: 280px;
+    height: 160px;
+  }
+  .mainCard img {
+    width: 280px;
+    height: 160px;
+  }
+}
+@media (min-width: 375px) and (max-width: 410px) {
+  .mainCard {
+    width: 300px;
+    height: 170px;
+  }
+  .mainCard img {
+    width: 300px;
+    height: 170px;
+  }
+}
+@media (min-width: 410px) and (max-width: 500px) {
+  .mainCard {
+    width: 322px;
+    height: 180px;
+  }
+  .mainCard img {
+    width: 322px;
+    height: 180px;
+  }
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  .mainCard {
+    width: 205px;
+    height: 140px;
+  }
+  .mainCard img {
+    width: 205px;
+    height: 140px;
+  }
+}
+@media (min-width: 601px) and (max-width: 800px) {
+  .mainCard {
+    width: 295px;
+    height: 180px;
+  }
+  .mainCard img {
+    width: 295px;
+    height: 180px;
+  }
+}
+@media (min-width: 801px) and (max-width: 1024px) {
+  .mainCard {
+    width: 255px;
+    height: 170px;
+  }
+  .mainCard img {
+    width: 255px;
+    height: 170px;
   }
 }
 .card--modifier {
@@ -446,6 +685,12 @@ body {
 
 li {
   list-style: none;
+}
+
+@media (min-width: 280px) and (max-width: 500px) {
+  body {
+    font-size: 14px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

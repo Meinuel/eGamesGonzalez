@@ -7,15 +7,18 @@ $size:39px;
     justify-content: space-evenly;
     &__pages {
         margin-top: 140px;
-        @media (min-width: 360px) and (max-width: 415px) {
+        @media (min-width: 280px) and (max-width: 550px) {
             margin-top: 20px;
+        }
+        @media (min-width: 801px) and (max-width: 1024px) {
+            margin-top: 85px;
         }
         li {
             padding-top: 3px;
             width: $size*2;
             height: $size*2;
             margin-bottom: 43px;
-            @media (min-width: 360px) and (max-width: 415px) {
+            @media (min-width: 280px) and (max-width: 550px) {
                 margin-bottom: 80px;
             }
             a {
@@ -32,6 +35,9 @@ $size:39px;
                     text-decoration: none;
                     color: gold;
                 }
+                @media (min-width: 280px) and (max-width: 550px) {
+                    background-color: #63BFA5;
+                }
             }
         }
     }
@@ -39,8 +45,11 @@ $size:39px;
         margin-top: 145px;
         width: 100px;
         height: 500px;
-        @media (min-width: 360px) and (max-width: 415px) {
+        @media (min-width: 280px) and (max-width: 800px) {
             display: none;
+        }
+        @media (min-width: 801px) and (max-width: 1024px) {
+            margin-top: 85px;
         }
     }
 }
@@ -55,7 +64,7 @@ $size:39px;
     width: $size *1.2;
 }
 
-@media (min-width: 360px) and (max-width: 415px) {
+@media (min-width: 280px) and (max-width: 550px) {
     $reSize: 0.7;
     .iconsNav {
         width: $size * $reSize;
@@ -64,6 +73,20 @@ $size:39px;
     .iconsNav--live {
         width: ($size * $reSize)*1.2;
     }
+    .containerNav {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 800px) {
+    .containerNav {
+        margin-left: 10px;
+        margin-right: 5px;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1024px) {
     .containerNav {
         margin-left: 5px;
         margin-right: 5px;
