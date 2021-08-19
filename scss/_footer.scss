@@ -20,9 +20,22 @@
     height: 10vh;
 }
 
-@media (min-width: 280px) and (max-width: 550px) {
+@media (min-width: 280px) and (max-width: 800px) {
     .iconsFooter {
         width: 30px;
         height: 30px;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1024px) {
+    // .myFooter {
+    //     justify-content: center;
+    //     div {
+    //         display: none;
+    //     }
+    // }
+    .iconsFooter {
+        width: 50px;
+        height: 50px;
     }
 }

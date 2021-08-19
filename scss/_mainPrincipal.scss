@@ -28,6 +28,9 @@ $titleName: 'tendencias',
     }
     div {
         font-size: 0.8rem;
+        @media (min-width: 1900px) {
+            font-size: 1rem;
+        }
     }
 }
 
@@ -50,17 +53,16 @@ $titleName: 'tendencias',
         align-items: center;
         justify-content: center;
         margin-left: 15px;
-        div {
-            display: none;
-        }
     }
 }
 
-@media (min-width: 200px) and (max-width: 299px) {
-    $cardSize: 200px, 140px;
+@media (min-width: 300px) and (max-width: 500px) {
+    $cardSize: 70vw, 50vw;
     .mainCard {
         width: nth($cardSize, 1);
         height: nth($cardSize, 2);
+        margin-left: 20px;
+        margin-right: 20px;
         img {
             width: nth($cardSize, 1);
             height: nth($cardSize, 2);
@@ -68,56 +70,8 @@ $titleName: 'tendencias',
     }
 }
 
-@media (min-width: 300px) and (max-width: 374px) {
-    $cardSize: 280px, 160px;
-    .mainCard {
-        width: nth($cardSize, 1);
-        height: nth($cardSize, 2);
-        img {
-            width: nth($cardSize, 1);
-            height: nth($cardSize, 2);
-        }
-    }
-}
-
-@media (min-width: 375px) and (max-width: 410px) {
-    $cardSize: 300px, 170px;
-    .mainCard {
-        width: nth($cardSize, 1);
-        height: nth($cardSize, 2);
-        img {
-            width: nth($cardSize, 1);
-            height: nth($cardSize, 2);
-        }
-    }
-}
-
-@media (min-width: 410px) and (max-width: 500px) {
-    $cardSize: 322px, 180px;
-    .mainCard {
-        width: nth($cardSize, 1);
-        height: nth($cardSize, 2);
-        img {
-            width: nth($cardSize, 1);
-            height: nth($cardSize, 2);
-        }
-    }
-}
-
-@media (min-width: 500px) and (max-width: 600px) {
-    $cardSize: 205px, 140px;
-    .mainCard {
-        width: nth($cardSize, 1);
-        height: nth($cardSize, 2);
-        img {
-            width: nth($cardSize, 1);
-            height: nth($cardSize, 2);
-        }
-    }
-}
-
-@media (min-width: 601px) and (max-width: 800px) {
-    $cardSize: 295px, 180px;
+@media (min-width: 500px) and (max-width: 800px) {
+    $cardSize: 37.5vw, 27vw;
     .mainCard {
         width: nth($cardSize, 1);
         height: nth($cardSize, 2);
@@ -129,7 +83,7 @@ $titleName: 'tendencias',
 }
 
 @media (min-width: 801px) and (max-width: 1024px) {
-    $cardSize: 255px, 170px;
+    $cardSize: 190px, 160px;
     .mainCard {
         width: nth($cardSize, 1);
         height: nth($cardSize, 2);

@@ -2,14 +2,9 @@ $size:80px;
 @mixin flex($seccion) {
     display: flex;
     flex-direction: column;
-    @if $seccion==1 {
-        justify-content: start;
-    }
-    @else {
-        justify-content: space-evenly;
-        @if $seccion==2 {
-            align-items: center;
-        }
+    justify-content: space-evenly;
+    @if $seccion==2 {
+        align-items: center;
     }
 }
 
@@ -38,13 +33,13 @@ $size:80px;
 }
 
 .containerSection {
+    height: 100%;
     @include flex(1);
     &__title {
         display: flex;
         justify-content: center;
         align-items: center;
         font-family: 'Bebas Neue';
-        margin-bottom: 2.5vh;
         letter-spacing: 2px;
         @media (min-width: 200px) and (max-width: 1024px) {
             margin-bottom: 0px;
@@ -54,10 +49,11 @@ $size:80px;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        overflow: scroll;
+        margin-bottom: 20px;
         @media (min-width: 200px) and (max-width: 1024px) {
             justify-content: flex-start;
             align-items: center;
+            overflow: scroll;
         }
     }
     a {
@@ -91,10 +87,13 @@ $size:80px;
         a {
             align-self: center;
             margin-right: 0px;
-            margin-top: 10px;
+            margin-top: 0px;
         }
     }
+}
+
+@media(max-width: 370px) {
     h2 {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 }
