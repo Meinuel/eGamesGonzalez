@@ -51,6 +51,14 @@ $size:80px;
             justify-content: flex-start;
             overflow: scroll;
         }
+        &--reSize {
+            @media (max-width: 768px) {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+            }
+        }
     }
     &--verTodo {
         align-self: flex-end;
@@ -74,19 +82,6 @@ $size:80px;
     font-size: 25px;
 }
 
-@media (max-width: 370px) {
-    %containerMain {
-        margin-right: 0px;
-    }
-    .containerSection {
-        a {
-            align-self: center;
-            margin-right: 0px;
-            margin-top: 0px;
-        }
-    }
-}
-
 @media (min-width: 769px) and (max-width: 1025px) {
     .iconsTitle {
         width: 50px;
@@ -105,5 +100,21 @@ $size:80px;
     .descripcion {
         margin: 0 auto;
         font-size: 16px;
+        @media (max-width: 426px) {
+            font-size: 13px;
+        }
+    }
+}
+
+@media (max-width: 370px) {
+    %containerMain {
+        margin-right: 0px;
+    }
+    .containerSection {
+        a {
+            align-self: center;
+            margin-right: 0px;
+            margin-top: 0px;
+        }
     }
 }

@@ -1,4 +1,4 @@
-.card--modifier {
+.card {
     color: black;
     background-color: white;
     border: solid black;
@@ -9,7 +9,7 @@
     align-items: center;
 }
 
-.card-img-top--resize {
+.card-img-top {
     width: 15vh;
     height: 15vh;
 }
@@ -21,10 +21,6 @@
         background-color: #25856a;
         color: white;
     }
-}
-
-.btn--size {
-    margin: 0;
 }
 
 .card--fadein {
@@ -52,37 +48,54 @@
     animation-duration: 5s;
 }
 
-@media (min-width: 769px) and (max-width:1025px) {
-    .card--modifier {
+@media (min-width: 768px) and (max-width:1024px) {
+    .card {
         width: 220px;
-        height: 280px;
+        height: 270px;
         margin-left: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex-direction: row;
+        margin-bottom: 15px;
+        margin-top: 17px;
     }
 }
 
 @media (min-width: 426px) and (max-width:768px) {
-    .card--modifier {
-        height: 240px;
-        margin-left: 15px;
-        font-size: 0.8rem;
+    .card {
+        width: 400px;
+        height: 140px;
     }
     .btn--size {
         width: 100px;
         height: 35px;
-        font-size: 0.9rem;
     }
 }
 
-@media (max-width:426px) {
-    .card--modifier {
-        width: 500px;
-        height: 100px;
-        flex-direction: row;
-        justify-content: space-evenly;
+@media (min-width:376px) and (max-width:426px) {
+    .card {
+        width: 300px;
+        height: 110px;
+        h4 {
+            font-size: 1rem;
+        }
     }
     .btn--size {
         width: 100px;
         height: 35px;
-        font-size: 0.9rem;
+    }
+    .card-img-top {
+        width: 10vh;
+        height: 10vh;
+    }
+}
+
+@media (max-width:376px) {
+    .card {
+        width: 250px;
+        height: 130px;
     }
 }

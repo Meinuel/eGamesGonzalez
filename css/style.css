@@ -63,18 +63,22 @@
   flex-direction: column;
   align-items: center;
 }
-.containerNav__pages li:hover {
-  background-color: #25856a;
-  border-radius: 10px;
-  text-decoration: none;
+@media (max-width: 375px) {
+  .containerNav__pages li a {
+    font-size: 0.8rem;
+  }
 }
 .containerNav__pages li:hover a {
   text-decoration: none;
-  color: gold;
+  color: white;
 }
-@media (min-width: 280px) and (max-width: 550px) {
+@media (min-width: 550px) {
   .containerNav__pages li:hover {
-    background-color: #63BFA5;
+    background-color: #25856a;
+    border-radius: 10px;
+  }
+  .containerNav__pages li:hover a {
+    color: gold;
   }
 }
 .containerNav__cables {
@@ -110,10 +114,25 @@
     margin-right: 5px;
   }
 }
-@media (min-width: 319px) and (max-width: 500px) {
+@media (min-width: 375px) and (max-width: 500px) {
   .containerNav {
     margin-left: 7px;
     margin-right: 5px;
+  }
+}
+@media (max-width: 375px) {
+  .containerNav {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .iconsNav {
+    width: 30px;
+    height: 30px;
+  }
+
+  .iconsNav--live {
+    width: 36px;
   }
 }
 .myHeader {
@@ -271,6 +290,14 @@
     overflow: scroll;
   }
 }
+@media (max-width: 768px) {
+  .containerSection__cards--reSize {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
 .containerSection--verTodo {
   align-self: flex-end;
   margin-right: 30px;
@@ -292,17 +319,6 @@
   font-size: 25px;
 }
 
-@media (max-width: 370px) {
-  .containerMainSeccion, .containerMainLive, .containerMainPrincipal {
-    margin-right: 0px;
-  }
-
-  .containerSection a {
-    align-self: center;
-    margin-right: 0px;
-    margin-top: 0px;
-  }
-}
 @media (min-width: 769px) and (max-width: 1025px) {
   .iconsTitle {
     width: 50px;
@@ -322,6 +338,22 @@
   .descripcion {
     margin: 0 auto;
     font-size: 16px;
+  }
+}
+@media (max-width: 768px) and (max-width: 426px) {
+  .descripcion {
+    font-size: 13px;
+  }
+}
+@media (max-width: 370px) {
+  .containerMainSeccion, .containerMainLive, .containerMainPrincipal {
+    margin-right: 0px;
+  }
+
+  .containerSection a {
+    align-self: center;
+    margin-right: 0px;
+    margin-top: 0px;
   }
 }
 .myFooter {
@@ -346,16 +378,16 @@
   height: 60px;
 }
 
-@media (min-width: 280px) and (max-width: 800px) {
-  .iconsFooter {
-    width: 30px;
-    height: 30px;
-  }
-}
-@media (min-width: 801px) and (max-width: 1024px) {
+@media (min-width: 800px) and (max-width: 1024px) {
   .iconsFooter {
     width: 50px;
     height: 50px;
+  }
+}
+@media (max-width: 800px) {
+  .iconsFooter {
+    width: 30px;
+    height: 30px;
   }
 }
 .bordersAndRadius, .myBorders {
@@ -414,6 +446,21 @@ div#logo:hover {
 .generosCard {
   background-color: #ebe9e9;
   color: black;
+}
+@media (max-width: 600px) {
+  .generosCard p {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 600px) and (max-width: 450px) {
+  .generosCard p {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 600px) and (max-width: 450px) and (max-width: 320px) {
+  .generosCard p {
+    font-size: 0.6rem;
+  }
 }
 
 .generosCard__img {
@@ -574,7 +621,7 @@ div#logo:hover {
     height: 160px;
   }
 }
-.card--modifier {
+.card {
   color: black;
   background-color: white;
   border: solid black;
@@ -585,7 +632,7 @@ div#logo:hover {
   align-items: center;
 }
 
-.card-img-top--resize {
+.card-img-top {
   width: 15vh;
   height: 15vh;
 }
@@ -597,10 +644,6 @@ div#logo:hover {
 .btn--color:hover {
   background-color: #25856a;
   color: white;
-}
-
-.btn--size {
-  margin: 0;
 }
 
 .card--fadein {
@@ -628,38 +671,54 @@ div#logo:hover {
   animation-duration: 5s;
 }
 
-@media (min-width: 769px) and (max-width: 1025px) {
-  .card--modifier {
+@media (min-width: 768px) and (max-width: 1024px) {
+  .card {
     width: 220px;
-    height: 280px;
+    height: 270px;
     margin-left: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .card {
+    flex-direction: row;
+    margin-bottom: 15px;
+    margin-top: 17px;
   }
 }
 @media (min-width: 426px) and (max-width: 768px) {
-  .card--modifier {
-    height: 240px;
-    margin-left: 15px;
-    font-size: 0.8rem;
+  .card {
+    width: 400px;
+    height: 140px;
   }
 
   .btn--size {
     width: 100px;
     height: 35px;
-    font-size: 0.9rem;
   }
 }
-@media (max-width: 426px) {
-  .card--modifier {
-    width: 500px;
-    height: 100px;
-    flex-direction: row;
-    justify-content: space-evenly;
+@media (min-width: 376px) and (max-width: 426px) {
+  .card {
+    width: 300px;
+    height: 110px;
+  }
+  .card h4 {
+    font-size: 1rem;
   }
 
   .btn--size {
     width: 100px;
     height: 35px;
-    font-size: 0.9rem;
+  }
+
+  .card-img-top {
+    width: 10vh;
+    height: 10vh;
+  }
+}
+@media (max-width: 376px) {
+  .card {
+    width: 250px;
+    height: 130px;
   }
 }
 .body--SignUp {

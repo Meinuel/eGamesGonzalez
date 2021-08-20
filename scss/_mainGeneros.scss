@@ -1,9 +1,24 @@
-.generosCard {
-    background-color: rgb(235, 233, 233);
-    color: black;
-}
-
-.generosCard__img {
-    width: 15vh;
-    height: 15vh;
-}
+    .generosCard {
+        background-color: rgb(235, 233, 233);
+        color: black;
+        @media (max-width: 600px) {
+            p {
+                font-size: 0.9rem;
+            }
+            @media (max-width: 450px) {
+                p {
+                    font-size: 0.7rem;
+                }
+                @media (max-width: 320px) {
+                    p {
+                        font-size: 0.6rem;
+                    }
+                }
+            }
+        }
+    }
+    
+    .generosCard__img {
+        width: 15vh;
+        height: 15vh;
+    }
