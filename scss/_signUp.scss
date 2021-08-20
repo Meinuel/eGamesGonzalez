@@ -5,12 +5,25 @@
 .headerSignUp {
     width: 100%;
     font-size: 2rem;
+    @media (max-width: 1024px) {
+        font-size: 1rem;
+    }
 }
 
 .mainSignUp {
     display: flex;
     justify-content: space-around;
     align-items: baseline;
+    @media (max-width: 768px) {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+aside img {
+    @media (max-width: 768px) {
+        display: none;
+    }
 }
 
 fieldset {
@@ -18,6 +31,9 @@ fieldset {
     border: solid black;
     display: flex;
     flex-direction: column;
+    @media (max-width: 768px) {
+        margin-top: 50px;
+    }
 }
 
 fieldset div {

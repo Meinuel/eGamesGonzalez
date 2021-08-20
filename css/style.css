@@ -733,11 +733,28 @@ div#logo:hover {
   width: 100%;
   font-size: 2rem;
 }
+@media (max-width: 1024px) {
+  .headerSignUp {
+    font-size: 1rem;
+  }
+}
 
 .mainSignUp {
   display: flex;
   justify-content: space-around;
   align-items: baseline;
+}
+@media (max-width: 768px) {
+  .mainSignUp {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  aside img {
+    display: none;
+  }
 }
 
 fieldset {
@@ -745,6 +762,11 @@ fieldset {
   border: solid black;
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 768px) {
+  fieldset {
+    margin-top: 50px;
+  }
 }
 
 fieldset div {
