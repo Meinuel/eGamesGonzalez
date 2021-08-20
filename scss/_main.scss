@@ -22,14 +22,14 @@ $size:80px;
     @include flex(0);
 }
 
-.containerMainPrincipal {
-    @extend %containerMain;
-    @include flex(1);
-}
-
 .containerMainLive {
     @extend %containerMain;
     @include flex(2);
+}
+
+.containerMainPrincipal {
+    @extend %containerMain;
+    @include flex(1);
 }
 
 .containerSection {
@@ -41,22 +41,18 @@ $size:80px;
         align-items: center;
         font-family: 'Bebas Neue';
         letter-spacing: 2px;
-        @media (min-width: 200px) and (max-width: 1024px) {
-            margin-bottom: 0px;
-        }
     }
     &__cards {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
         margin-bottom: 20px;
-        @media (min-width: 200px) and (max-width: 1024px) {
+        @media (max-width: 1100px) {
             justify-content: flex-start;
-            align-items: center;
             overflow: scroll;
         }
     }
-    a {
+    &--verTodo {
         align-self: flex-end;
         margin-right: 30px;
         margin-top: auto;
@@ -78,12 +74,11 @@ $size:80px;
     font-size: 25px;
 }
 
-@media (min-width: 280px) and (max-width: 1024px) {
+@media (max-width: 370px) {
     %containerMain {
         margin-right: 0px;
     }
     .containerSection {
-        margin-bottom: 55px;
         a {
             align-self: center;
             margin-right: 0px;
@@ -92,8 +87,23 @@ $size:80px;
     }
 }
 
-@media(max-width: 370px) {
+@media (min-width: 769px) and (max-width: 1025px) {
+    .iconsTitle {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media(max-width: 768px) {
     h2 {
-        font-size: 1rem;
+        font-size: 20px;
+    }
+    .iconsTitle {
+        width: 50px;
+        height: 50px;
+    }
+    .descripcion {
+        margin: 0 auto;
+        font-size: 16px;
     }
 }

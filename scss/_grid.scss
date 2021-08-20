@@ -1,51 +1,18 @@
 #grilla {
     display: grid;
     grid-template-areas: "logo header" "nav main" "footer footer";
-    grid-template-rows: 7% 80% 22%;
-    grid-template-columns: 25% 80%;
-    // grid-row-gap: 5px;
+    grid-template-rows: 9% 650px 27%;
+    grid-template-columns: 17% 83%;
 }
 
-// @media (min-width: 300px) and (max-width: 370px) {
-//     #grilla {
-//         grid-template-rows: 7% 73% 17%;
-//         grid-template-columns: 23% 82%;
-//     }
-// }
-// @media (min-width: 370px) and (max-width: 500px) {
-//     #grilla {
-//         grid-template-rows: 7% 80% 15%;
-//         grid-template-columns: 25% 80%;
-//     }
-// }
-// @media (min-width: 500px) and (max-width: 600px) {
-//     #grilla {
-//         grid-template-rows: 7% 80% 17%;
-//         grid-template-columns: 20% 80%;
-//     }
-// }
-// @media (min-width: 600px) and (max-width: 800px) {
-//     #grilla {
-//         grid-template-rows: 7% 70% 15%;
-//         grid-template-columns: 20% 80%;
-//     }
-// }
-// @media (min-width: 801px) and (max-width: 1024px) {
-//     #grilla {
-//         grid-template-rows: 7% 70% 18%;
-//         grid-template-columns: 1fr 4fr;
-//     }
-// }
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
     #grilla {
-        grid-template-rows: 135px 17fr 5fr;
-        grid-template-columns: 1fr 5fr;
+        grid-template-rows: 7% 590px 26%;
     }
 }
 
 @media (min-width: 1900px) {
     #grilla {
-        grid-template-rows: 12% 62% 26%;
-        grid-template-columns: 15% 76%;
+        grid-template-rows: 10% 885px 26%;
     }
 }

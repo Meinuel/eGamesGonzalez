@@ -2,71 +2,59 @@
 #grilla {
   display: grid;
   grid-template-areas: "logo header" "nav main" "footer footer";
-  grid-template-rows: 7% 80% 22%;
-  grid-template-columns: 25% 80%;
+  grid-template-rows: 9% 650px 27%;
+  grid-template-columns: 17% 83%;
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
   #grilla {
-    grid-template-rows: 135px 17fr 5fr;
-    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 7% 590px 26%;
   }
 }
 @media (min-width: 1900px) {
   #grilla {
-    grid-template-rows: 12% 62% 26%;
-    grid-template-columns: 15% 76%;
+    grid-template-rows: 10% 885px 26%;
   }
 }
 .containerNav {
   grid-area: nav;
-  margin-right: 20px;
-  margin-left: 42px;
+  margin-right: 18px;
+  margin-left: 30px;
   display: flex;
   justify-content: space-evenly;
 }
 .containerNav__pages {
-  margin-top: 140px;
+  margin-top: 150px;
 }
-@media (min-width: 280px) and (max-width: 600px) {
+@media (max-width: 768px) {
   .containerNav__pages {
-    margin-top: 20px;
+    margin-top: 10px;
   }
 }
-@media (min-width: 801px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
   .containerNav__pages {
-    margin-top: 160px;
+    margin-top: 130px;
   }
 }
-@media (min-width: 1900px) {
+@media (min-width: 1550px) {
   .containerNav__pages {
-    margin-top: 190px;
+    margin-top: 220px;
   }
 }
 .containerNav__pages li {
   padding-top: 3px;
   width: 78px;
   height: 78px;
-  margin-bottom: 70px;
+  margin-bottom: 45px;
 }
-@media (max-width: 370px) {
+@media (max-width: 1023px) {
   .containerNav__pages li {
     margin-bottom: 80px;
   }
 }
-@media (min-width: 370px) and (max-width: 500px) {
+@media (min-width: 1550px) {
   .containerNav__pages li {
-    margin-bottom: 120px;
-  }
-}
-@media (min-width: 500px) and (max-width: 600px) {
-  .containerNav__pages li {
-    margin-bottom: 100px;
-  }
-}
-@media (min-width: 801px) and (max-width: 1024px) {
-  .containerNav__pages li {
-    margin-bottom: 65px;
+    margin-bottom: 85px;
   }
 }
 .containerNav__pages li a {
@@ -90,27 +78,20 @@
   }
 }
 .containerNav__cables {
-  margin-top: 130px;
+  margin-top: 160px;
   width: 100px;
-  height: 575px;
+  height: 495px;
 }
-@media (min-width: 280px) and (max-width: 800px) {
+@media (max-width: 1300px) {
   .containerNav__cables {
     display: none;
   }
 }
-@media (min-width: 801px) and (max-width: 1024px) {
+@media (min-width: 1550px) {
   .containerNav__cables {
-    width: 100px;
-    margin-top: 160px;
-  }
-}
-@media (min-width: 1900px) {
-  .containerNav__cables {
-    width: 110px;
-    height: 600px;
-    overflow: hidden;
-    margin-top: 200px;
+    width: 115px;
+    height: 673px;
+    margin-top: 220px;
   }
 }
 
@@ -123,15 +104,15 @@
   width: 46.8px;
 }
 
-@media (min-width: 300px) and (max-width: 800px) {
+@media (min-width: 500px) and (max-width: 1024px) {
   .containerNav {
     margin-left: 10px;
     margin-right: 5px;
   }
 }
-@media (min-width: 801px) and (max-width: 1024px) {
+@media (min-width: 319px) and (max-width: 500px) {
   .containerNav {
-    margin-left: 5px;
+    margin-left: 7px;
     margin-right: 5px;
   }
 }
@@ -141,6 +122,11 @@
   align-items: center;
   justify-content: space-between;
   margin-right: 15px;
+}
+@media (max-width: 370px) {
+  .myHeader {
+    margin-right: 0px;
+  }
 }
 .myHeader a {
   display: flex;
@@ -157,37 +143,43 @@
   width: 800px;
   height: 40px;
 }
-@media (min-width: 1900px) {
+@media (min-width: 1550px) {
   .myHeader__input {
     width: 1000px;
     height: 50px;
   }
 }
-@media (min-width: 801px) and (max-width: 1024px) {
+@media (min-width: 1100px) and (max-width: 1350px) {
+  .myHeader__input {
+    width: 600px;
+    height: 40px;
+  }
+}
+@media (min-width: 800px) and (max-width: 1100px) {
   .myHeader__input {
     width: 400px;
     height: 40px;
   }
 }
-@media (min-width: 601px) and (max-width: 800px) {
+@media (min-width: 600px) and (max-width: 800px) {
   .myHeader__input {
-    width: 370px;
+    width: 300px;
     height: 40px;
   }
 }
-@media (min-width: 501px) and (max-width: 600px) {
+@media (min-width: 500px) and (max-width: 600px) {
   .myHeader__input {
-    width: 280px;
+    width: 250px;
     height: 40px;
   }
 }
-@media (min-width: 300px) and (max-width: 500px) {
+@media (min-width: 390px) and (max-width: 500px) {
   .myHeader__input {
     width: 180px;
     height: 40px;
   }
 }
-@media (min-width: 200px) and (max-width: 299px) {
+@media (min-width: 200px) and (max-width: 390px) {
   .myHeader__input {
     width: 150px;
     height: 30px;
@@ -201,41 +193,36 @@
   flex-direction: column;
   justify-content: center;
 }
-@media (min-width: 200px) and (max-width: 299px) {
+@media (min-width: 200px) and (max-width: 390px) {
   .myButton {
     width: 40px;
     height: 30px;
     font-size: 0.7rem;
   }
 }
-@media (min-width: 300px) and (max-width: 400px) {
-  .myButton {
-    width: 40px;
-    font-size: 0.7rem;
-  }
-}
-@media (min-width: 401px) and (max-width: 800px) {
+@media (min-width: 390px) and (max-width: 600px) {
   .myButton {
     width: 60px;
+    font-size: 0.9rem;
   }
 }
-@media (min-width: 801px) and (max-width: 1024px) {
+@media (min-width: 600px) and (max-width: 800px) {
+  .myButton {
+    width: 80px;
+  }
+}
+@media (min-width: 800px) and (max-width: 1024px) {
   .myButton {
     width: 100px;
   }
 }
-@media (min-width: 1900px) {
+@media (min-width: 1550px) {
   .myButton {
     height: 50px;
   }
 }
 
-@media (min-width: 280px) and (max-width: 1024px) {
-  .myHeader {
-    margin-right: 0px;
-  }
-}
-.containerMainLive, .containerMainPrincipal, .containerMainSeccion {
+.containerMainPrincipal, .containerMainLive, .containerMainSeccion {
   grid-area: main;
   background-color: #b63e8e;
   margin-right: 15px;
@@ -246,17 +233,17 @@
   justify-content: space-evenly;
 }
 
-.containerMainPrincipal {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-
 .containerMainLive {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+}
+
+.containerMainPrincipal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .containerSection {
@@ -272,25 +259,19 @@
   font-family: "Bebas Neue";
   letter-spacing: 2px;
 }
-@media (min-width: 200px) and (max-width: 1024px) {
-  .containerSection__title {
-    margin-bottom: 0px;
-  }
-}
 .containerSection__cards {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   margin-bottom: 20px;
 }
-@media (min-width: 200px) and (max-width: 1024px) {
+@media (max-width: 1100px) {
   .containerSection__cards {
     justify-content: flex-start;
-    align-items: center;
     overflow: scroll;
   }
 }
-.containerSection a {
+.containerSection--verTodo {
   align-self: flex-end;
   margin-right: 30px;
   margin-top: auto;
@@ -311,23 +292,36 @@
   font-size: 25px;
 }
 
-@media (min-width: 280px) and (max-width: 1024px) {
-  .containerMainSeccion, .containerMainPrincipal, .containerMainLive {
+@media (max-width: 370px) {
+  .containerMainSeccion, .containerMainLive, .containerMainPrincipal {
     margin-right: 0px;
   }
 
-  .containerSection {
-    margin-bottom: 55px;
-  }
   .containerSection a {
     align-self: center;
     margin-right: 0px;
     margin-top: 0px;
   }
 }
-@media (max-width: 370px) {
+@media (min-width: 769px) and (max-width: 1025px) {
+  .iconsTitle {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media (max-width: 768px) {
   h2 {
-    font-size: 1rem;
+    font-size: 20px;
+  }
+
+  .iconsTitle {
+    width: 50px;
+    height: 50px;
+  }
+
+  .descripcion {
+    margin: 0 auto;
+    font-size: 16px;
   }
 }
 .myFooter {
@@ -348,8 +342,8 @@
 }
 
 .iconsFooter {
-  width: 10vh;
-  height: 10vh;
+  width: 60px;
+  height: 60px;
 }
 
 @media (min-width: 280px) and (max-width: 800px) {
@@ -400,32 +394,16 @@ div#logo:hover {
   margin-top: 12px;
 }
 
-@media (min-width: 280px) and (max-width: 500px) {
+@media (max-width: 768px) {
   .logoIcon {
-    width: 45px;
-    height: 40px;
-    margin-top: 5px;
+    display: none;
   }
 }
-@media (min-width: 501px) and (max-width: 600px) {
+@media (min-width: 601px) and (max-width: 1350px) {
   .logoIcon {
-    margin-top: 0px;
-    width: 60px;
-    height: 50px;
-  }
-}
-@media (min-width: 601px) and (max-width: 800px) {
-  .logoIcon {
-    width: 100px;
-    height: 80px;
-    margin-top: 90px;
-  }
-}
-@media (min-width: 801px) and (max-width: 1024px) {
-  .logoIcon {
-    width: 200px;
-    height: 150px;
-    margin-top: 50px;
+    width: 150px;
+    height: 130px;
+    margin-top: 10px;
   }
 }
 @media (min-width: 1900px) {
@@ -455,6 +433,32 @@ div#logo:hover {
   height: 50vh;
 }
 
+@media (min-width: 390px) and (max-width: 767px) {
+  .carrouselLive {
+    width: 300px;
+    height: 250px;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+  }
+
+  .carrousel__img {
+    width: 300px;
+    height: 250px;
+  }
+}
+@media (max-width: 390px) {
+  .carrouselLive {
+    width: 250px;
+    height: 200px;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+  }
+
+  .carrousel__img {
+    width: 250px;
+    height: 200px;
+  }
+}
 .iconsPrincipal {
   width: 80px;
   height: 80px;
@@ -472,7 +476,7 @@ div#logo:hover {
 .mainCard--margin {
   margin-right: 0px;
 }
-@media (min-width: 280px) and (max-width: 800px) {
+@media (max-width: 800px) {
   .mainCard--margin {
     margin-right: 15px;
   }
@@ -501,41 +505,66 @@ div#logo:hover {
   color: #1BBF54;
 }
 
-@media (min-width: 200px) and (max-width: 1024px) {
+@media (max-width: 769px) {
   .iconsPrincipal {
     width: 45px;
     height: 45px;
   }
-
+}
+@media (max-width: 1100px) {
   .mainCard {
     align-items: center;
     justify-content: center;
     margin-left: 15px;
   }
 }
-@media (min-width: 300px) and (max-width: 500px) {
+@media (max-width: 320px) {
   .mainCard {
-    width: 70vw;
-    height: 50vw;
+    width: 225px;
+    height: 200px;
     margin-left: 20px;
     margin-right: 20px;
   }
   .mainCard img {
-    width: 70vw;
-    height: 50vw;
+    width: 225px;
+    height: 200px;
   }
 }
-@media (min-width: 500px) and (max-width: 800px) {
+@media (min-width: 321px) and (max-width: 376px) {
   .mainCard {
-    width: 37.5vw;
-    height: 27vw;
+    width: 250px;
+    height: 200px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
   .mainCard img {
-    width: 37.5vw;
-    height: 27vw;
+    width: 250px;
+    height: 200px;
   }
 }
-@media (min-width: 801px) and (max-width: 1024px) {
+@media (min-width: 376px) and (max-width: 500px) {
+  .mainCard {
+    width: 280px;
+    height: 200px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .mainCard img {
+    width: 280px;
+    height: 200px;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  .mainCard {
+    width: 290px;
+    height: 200px;
+  }
+  .mainCard img {
+    width: 290px;
+    height: 200px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
   .mainCard {
     width: 190px;
     height: 160px;
@@ -549,8 +578,8 @@ div#logo:hover {
   color: black;
   background-color: white;
   border: solid black;
-  width: 12vw;
-  height: 40vh;
+  width: 180px;
+  height: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -568,6 +597,10 @@ div#logo:hover {
 .btn--color:hover {
   background-color: #25856a;
   color: white;
+}
+
+.btn--size {
+  margin: 0;
 }
 
 .card--fadein {
@@ -595,6 +628,40 @@ div#logo:hover {
   animation-duration: 5s;
 }
 
+@media (min-width: 769px) and (max-width: 1025px) {
+  .card--modifier {
+    width: 220px;
+    height: 280px;
+    margin-left: 15px;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  .card--modifier {
+    height: 240px;
+    margin-left: 15px;
+    font-size: 0.8rem;
+  }
+
+  .btn--size {
+    width: 100px;
+    height: 35px;
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 426px) {
+  .card--modifier {
+    width: 500px;
+    height: 100px;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .btn--size {
+    width: 100px;
+    height: 35px;
+    font-size: 0.9rem;
+  }
+}
 .body--SignUp {
   height: 100%;
 }

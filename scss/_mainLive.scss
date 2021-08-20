@@ -1,11 +1,41 @@
+$size: 70vh,
+50vh;
 .carrouselLive {
-    width: 70vh;
-    height: 50vh;
+    width: nth($size, 1);
+    height: nth($size, 2);
     animation-name: fadeIn;
     animation-duration: 2s;
 }
 
 .carrousel__img {
-    width: 70vh;
-    height: 50vh;
+    width: nth($size, 1);
+    height: nth($size, 2);
+}
+
+@media (min-width: 390px) and (max-width: 767px) {
+    $size: 300px, 250px;
+    .carrouselLive {
+        width: nth($size, 1);
+        height: nth($size, 2);
+        animation-name: fadeIn;
+        animation-duration: 2s;
+    }
+    .carrousel__img {
+        width: nth($size, 1);
+        height: nth($size, 2);
+    }
+}
+
+@media (max-width: 390px) {
+    $size: 250px, 200px;
+    .carrouselLive {
+        width: nth($size, 1);
+        height: nth($size, 2);
+        animation-name: fadeIn;
+        animation-duration: 2s;
+    }
+    .carrousel__img {
+        width: nth($size, 1);
+        height: nth($size, 2);
+    }
 }
