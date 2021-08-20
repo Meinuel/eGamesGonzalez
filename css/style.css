@@ -688,6 +688,17 @@ div#logo:hover {
     margin-bottom: 15px;
     margin-top: 17px;
   }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+  }
+  .card-body h4 {
+    align-self: center;
+  }
+  .card-body p {
+    align-self: center;
+  }
 }
 @media (min-width: 426px) and (max-width: 768px) {
   .card {
