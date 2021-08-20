@@ -18,9 +18,9 @@ div#logo {
     margin-top: 12px;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 1900px) {
     .logoIcon {
-        display: none;
+        margin-top: 66px;
     }
 }
 
@@ -32,8 +32,8 @@ div#logo {
     }
 }
 
-@media (min-width: 1900px) {
+@media (max-width: 768px) {
     .logoIcon {
-        margin-top: 66px;
+        display: none;
     }
 }
